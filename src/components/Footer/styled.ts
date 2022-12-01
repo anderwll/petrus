@@ -5,12 +5,16 @@ const DivFooter = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 8rem;
+    padding: 2rem;
     background-color: #333;
-    color: #fff;
-
     p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        color: ${props => props.theme.secondary}
+    }
+
+    a {
+        text-decoration: none;
+        color: ${props => props.theme.secondary};
     }
 `;
 

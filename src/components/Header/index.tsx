@@ -25,7 +25,7 @@ const Header = () => {
     return (
         <DivHeader scrollOn={scroll}>
             <DivLogo>
-                <Links href='#carousel'>
+                <Links href='#home'>
                     <img src="" alt="PETRUS ARQUITETURA" />
                 </Links>
             </DivLogo>

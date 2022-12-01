@@ -5,17 +5,18 @@ interface DivModelPops {
 }
 
 const DivGallery = styled.div`
-    margin: 8rem 0 0 0;
-    width: 80%;
+    margin: 4rem 0 4rem 0;
+    width: 70vw;
+    box-shadow: ${[props => props.theme.boxShadow]};
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
-    -webkit-column-width: 33%;
-    -moz-column-width: 33%;
-    column-width: 33%;
+    -webkit-column-width: 33.33%;
+    -moz-column-width: 33.33%;
+    column-width: 33.33%;
 
     @media screen and (max-width: 768px) {
-        width: 90%;
+        width: 100vw;
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
@@ -23,7 +24,6 @@ const DivGallery = styled.div`
         -moz-column-width: 100%;
         column-width: 100%;
     }
-
 `;
 
 const DivPics = styled.div`
@@ -32,12 +32,12 @@ const DivPics = styled.div`
     cursor: pointer;
 
     &&:hover {
-        filter: opacity(.8);
+        filter: opacity(.7);
     }
 `;
 
 const DivModel = styled.div<DivModelPops>`
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -45,7 +45,8 @@ const DivModel = styled.div<DivModelPops>`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: ${props => props.theme.bgPrimary};
+    backdrop-filter: blur(2rem);
     transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
     visibility: ${props => props.imgOpen ? 'visible' : 'hidden'};
     opacity: ${props => props.imgOpen ? '1' : '0'};
@@ -67,8 +68,8 @@ const DivModel = styled.div<DivModelPops>`
 
     svg {
         position: fixed;
-        top: 2rem;
-        right: 2rem;
+        top: 1.5rem;
+        right: 3rem;
         font-size: 4rem;
         padding: 0.5rem;
         background-color: rgba(0,0,0,0.4);

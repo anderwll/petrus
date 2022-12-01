@@ -9,7 +9,7 @@ const DivEquipe = styled.div`
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: ${props => props.theme.fontSize};
         text-align: justify;
     }
 
@@ -31,6 +31,10 @@ const DivSociais = styled.div`
     display: flex;
     justify-content: left;
     width: auto;
+
+    a:hover {
+        color: #090979;
+    }
 
 `;
 

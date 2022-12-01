@@ -4,45 +4,28 @@ const DivServicos = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10rem 0 0 0;
-    width: 80%;
+    padding: 4rem 0;
+    width: 70vw;
 
     img {
-        width: 28rem;
+        width: 100%;
         height: 25rem;
     }
 
-    h4 {
-        margin: 2rem 0;
-    } 
+    p {
+        font-size: ${props => props.theme.fontSize};
+        width: 100%;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
 
     @media screen and (max-width: 1080px) {
-        width: 90%;
-
-        img {
-            width: 24rem;
-        }
-    }
-
-    @media screen and (max-width: 900px) {
-        width: 50%;
-
-        img {
-            width: 32rem;
-        }
-    }
+        width: 90vw; 
+    }  
 `;
 
-const DivTextS = styled.div`
-    display: flex;
-    justify-content: center;
-
-    p {
-        font-size: 1.5rem;
-        width: 80%;
-        text-align: justify;
-        margin-bottom: 4rem;
-    }   
-`;
-
-export { DivServicos, DivTextS };
+export { DivServicos };

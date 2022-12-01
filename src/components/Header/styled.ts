@@ -1,32 +1,25 @@
 import styled from "styled-components";
 
-interface DivHeaderProps {
-    scrollOn: boolean
+interface HeaderProps {
+    scrollOn?: boolean,
+    menuOpen?: boolean
 }
 
-interface DivLinksProps {
-    menuOpen: boolean;
-}
-
-const DivHeader = styled.div<DivHeaderProps>`
+const DivHeader = styled.div<HeaderProps>`
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     width: 100%;
-    height: ${props => props.scrollOn ? '8rem' : '12rem'};
-    background: ${props => props.scrollOn ? props.theme.primary : 'transparent'};
-    box-shadow: ${props => props.scrollOn ? '0 8px 32px 0 rgba(3, 3, 3, 0.37)' : '0'};
-    backdrop-filter: ${props => props.scrollOn ? 'blur(13.5px)' : '0'};
-    -webkit-backdrop-filter: ${props => props.scrollOn ? 'blur(13.5px)' : '0'};
-    border: ${props => props.scrollOn ? '1px solid rgba(255, 255, 255, 0.18)' : 'none'};
-    border-radius: ${props => props.scrollOn ? '0.5rem' : '0'};
+    height: ${props => props.scrollOn ? '8rem' : '10rem'};
+    background: ${props => props.scrollOn && props.theme.bgPrimary};
+    box-shadow: ${props => props.scrollOn && props.theme.boxShadow};
+    backdrop-filter: ${props => props.scrollOn && `blur(2rem)`};
+    border: ${props => props.scrollOn && '1px solid rgba(255, 255, 255, 0.18)'};
+    border-radius: ${props => props.scrollOn && '0.5rem'};
     transition: .4s ease;
-    svg:hover {
-        color: #fff;
-        cursor: pointer;
-    }
+    
 `;
  
 const DivLogo = styled.div`
@@ -36,29 +29,37 @@ const DivLogo = styled.div`
     }
 `;
 
-const DivLinks = styled.div<DivLinksProps>`
+const DivLinks = styled.div<HeaderProps>`
     svg {
         display: none;
+        position: fixed;
+        font-size: 3rem;
+        top: 2.5rem;
+        right: 2.5rem;
     }
     
     @media only screen and ( max-width: 968px) {
-        position: absolute;
+        position: fixed;
         display: ${props => props.menuOpen ? 'flex' : 'none'};
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(122, 122, 122, 0.623);
+        z-index: 999;
         top: 0;
+        background-color: ${props => props.menuOpen && 'rgba(0, 0, 0, 0.942)'};
         text-transform: uppercase;
+
+        a {
+            color: ${props => props.menuOpen && props.theme.secondary};
+
+        }
+
         svg {
-            display: block;
-            position: fixed;
-            font-size: 3rem;
-            top: 2.5rem;
-            right: 2.5rem;
-    }
+            display: block; 
+            color: ${props => props.menuOpen && props.theme.secondary};     
+        }
   }
 `;
 
@@ -72,16 +73,17 @@ const Links = styled.a`
     text-decoration: none;
     font-size: 2rem;
     margin: 2rem 1rem;
-    color: #333;
+    color: ${props => props.theme.primary};
     svg {
         font-size: 2.5rem;
     } 
+
     &:hover {
-        color: blue;
+        color: ${props => props.theme.secondary};
     }
 `;
 
-const DivMenuIcon =  styled.div<DivLinksProps>`
+const DivMenuIcon =  styled.div<HeaderProps>`
     position: absolute;
     right: 2.5rem;
     svg {

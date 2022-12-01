@@ -7,7 +7,6 @@ const DivButton = styled.div`
     bottom: 0;
     margin-right: 2rem;
     margin-bottom: 2rem;
-
 `;
 
 export { DivButton };

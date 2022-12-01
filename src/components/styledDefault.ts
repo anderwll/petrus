@@ -16,6 +16,9 @@ const SectionDef = styled.section<SectionDefProps>`
     background-color: ${props => props.bgColor};
     background-size: cover;
     background-position: center;
+    h2 {
+        margin-top: 2.5rem;
+    }
 `;
 
 const DivDef = styled.div`

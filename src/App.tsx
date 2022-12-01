@@ -6,9 +6,11 @@ import AppRoutes from './routes/AppRoutes';
 
 function App() {
   return (
-    <ThemeProvider theme={deflt}>
-      <AppRoutes/>
-    </ThemeProvider>
+    <div className='body'>
+      <ThemeProvider theme={deflt}>
+        <AppRoutes/>
+      </ThemeProvider>
+    </div>
   );
 }
 

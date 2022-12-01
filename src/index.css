@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100vw;
+}
+
 html {
   font-size: 62.5%; 
   scroll-behavior: smooth;
