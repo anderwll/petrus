@@ -7,12 +7,12 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const Carrousel = () => {
     return (
-        <SectionDef id='home' bgImg='./assets/image/img1.jpg'>
+        <SectionDef  bgImg='./assets/image/img1.jpg'>
 
             <DivText>
                 <Typography variant="h3" color="initial">Levando a você a sua melhor experiência de vida!</Typography>
                 <ButtonDefault 
-                    hRef='#projetos' 
+                    hRef='#projects' 
                     texto='Conheça nossos projetos' 
                     icon={<ArrowDownwardIcon/>}
                 />

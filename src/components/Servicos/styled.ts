@@ -5,11 +5,10 @@ const DivServicos = styled.div`
     justify-content: center;
     align-items: center;
     padding: 4rem 0;
-    width: 70vw;
+    width: 60vw;
 
     img {
-        width: 100%;
-        height: 25rem;
+        height: 28rem;
     }
 
     p {
@@ -23,9 +22,10 @@ const DivServicos = styled.div`
         font-weight: 500;
     }
 
-    @media screen and (max-width: 1080px) {
-        width: 90vw; 
-    }  
+    @media screen and (max-width: 1200px) {
+        width: 80vw; 
+    } 
+    
 `;
 
 export { DivServicos };

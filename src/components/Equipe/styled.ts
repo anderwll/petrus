@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const DivEquipe = styled.div`
-    width: 50vw; 
+    width: 70vw; 
     padding: 10rem 0 10rem 0;
     
     h5 {
@@ -13,25 +13,29 @@ const DivEquipe = styled.div`
         text-align: justify;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1536px) {
+        width: 80vw;
+    }
+
+    @media screen and (max-width: 1200px) {
         width: 90vw;
     }
+
+    @media screen and (max-width: 900px) {
+        width: 100vw;
+        text-align: center !important;
+    }   
 `;
 
 const ImgPerfil = styled.img`
-    width: 80%;
     height: 38rem;
 
     @media screen and (max-width: 900px) {
-        width: 100%;
+        height: 32rem;
     }
 `;
 
 const DivSociais = styled.div`
-    display: flex;
-    justify-content: left;
-    width: auto;
-
     a:hover {
         color: #090979;
     }

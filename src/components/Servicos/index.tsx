@@ -9,7 +9,7 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 const Servicos = () => {
     return (
-        <SectionDef id='servicos'
+        <SectionDef id='services'
             data-aos="fade-up"
             data-aos-duration='800'
         >
@@ -18,7 +18,10 @@ const Servicos = () => {
                     <Grid container justifyContent='center' spacing={8}>
                         <Grid 
                             item 
-                            md={3} 
+                            sm={7}
+                            md={6}
+                            lg={5} 
+                            xl={4}
                             sx={{display: 'flex', 
                                 flexDirection: 'column', 
                                 textAlign: 'center', 
@@ -35,7 +38,10 @@ const Servicos = () => {
                         </Grid>
                         <Grid 
                             item 
-                            md={3} 
+                            sm={7}
+                            md={6}
+                            lg={5} 
+                            xl={4} 
                             sx={{display: 'flex', 
                                 flexDirection: 'column', 
                                 textAlign: 'center', 
@@ -52,7 +58,10 @@ const Servicos = () => {
                         </Grid>
                         <Grid 
                             item 
-                            md={3} 
+                            sm={7}
+                            md={6}
+                            lg={5} 
+                            xl={4} 
                             sx={{display: 'flex', 
                                 flexDirection: 'column', 
                                 textAlign: 'center', 

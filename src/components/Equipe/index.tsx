@@ -10,7 +10,7 @@ import { desc1 } from './text';
 
 const Equipe = () => {
     return (
-        <SectionDef id='equipe'>
+        <SectionDef id='team'>
                 <Typography 
                     variant="h2" 
                     color="initial"
@@ -22,11 +22,13 @@ const Equipe = () => {
             <DivEquipe>
                 <Grid container>
                     <Grid 
-                        item 
-                        lg={6} 
-                        md={12} 
+                        item
+                        xs={12} 
+                        md={6}
                         display='flex' 
+                        justifyItems='center'
                         justifyContent='center'
+                        alignItems='center'
                         data-aos="fade-right"
                         data-aos-duration='1000'
                     >
@@ -34,8 +36,9 @@ const Equipe = () => {
                     </Grid>
                     <Grid 
                         item 
-                        lg={6} 
-                        md={12} 
+                        xs={12} 
+                        md={6} 
+                        lg={5} 
                         padding={4}
                         data-aos="fade-left"
                         data-aos-duration='1000'
@@ -50,20 +53,23 @@ const Equipe = () => {
                 </Grid>
                 <Grid container marginTop={8} flexDirection='row-reverse'>
                   <Grid 
-                        item 
-                        lg={6} 
-                        md={12} 
+                        item
+                        xs={12} 
+                        md={6}
                         display='flex' 
+                        justifyItems='center'
                         justifyContent='center'
+                        alignItems='center'
                         data-aos="fade-left"
                         data-aos-duration='1000'
                     >  
                         <ImgPerfil src='./assets/image/perfil2.jpg' alt='Arquiteto 1'/>
                     </Grid>
                     <Grid 
-                        item 
-                        lg={6} 
-                        md={12} 
+                        item
+                        xs={12} 
+                        md={6} 
+                        lg={5} 
                         padding={4}
                         data-aos="fade-right"
                         data-aos-duration='1000'

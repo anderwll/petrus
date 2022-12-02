@@ -16,7 +16,7 @@ const Projetos = () => {
     }
 
     return (
-        <SectionDef id='projetos'>
+        <SectionDef id='projects'>
             <Typography 
                 variant="h2" 
                 color="initial"

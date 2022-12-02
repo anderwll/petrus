@@ -7,7 +7,7 @@ import { Grid } from '@mui/material'
 
 const Contatos = () => {
     return (
-        <SectionDef bgImg='./assets/image/img8.jpg' id='contatos'>
+        <SectionDef bgImg='./assets/image/img8.jpg' id='contacts'>
            <DivContatos>
                 <Grid container spacing={8}>
                   <Grid item 

@@ -25,17 +25,17 @@ const Header = () => {
     return (
         <DivHeader scrollOn={scroll}>
             <DivLogo>
-                <Links href='#home'>
+                <Links href='#'>
                     <img src="" alt="PETRUS ARQUITETURA" />
                 </Links>
             </DivLogo>
             <DivLinks menuOpen={menu}>
                 <Close onClick={showMenu}/>
-                <Links href='#projetos' onClick={showMenu}>Projetos</Links>
-                <Links href='#servicos' onClick={showMenu}>Serviços</Links>
+                <Links href='#projects' onClick={showMenu}>Projetos</Links>
+                <Links href='#services' onClick={showMenu}>Serviços</Links>
                 <Links href='#about' onClick={showMenu}>Quem somos</Links>
-                <Links href='#equipe' onClick={showMenu}>Equipe</Links>
-                <Links href='#contatos' onClick={showMenu}>Contato</Links>
+                <Links href='#team' onClick={showMenu}>Equipe</Links>
+                <Links href='#contacts' onClick={showMenu}>Contato</Links>
             </DivLinks>
             <DivSociais>
                 <Links href='https://web.whatsapp.com/' target='_blank'><WhatsApp/></Links>
