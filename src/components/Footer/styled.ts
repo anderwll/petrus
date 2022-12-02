@@ -6,7 +6,7 @@ const DivFooter = styled.div`
     align-items: center;
     width: 100%;
     padding: 2rem;
-    background-color: #3333;
+    background-color: #333;
     p {
         font-size: 1.4rem;
         color: ${props => props.theme.bgPrimary}
