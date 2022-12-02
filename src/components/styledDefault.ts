@@ -16,6 +16,7 @@ const SectionDef = styled.section<SectionDefProps>`
     background-color: ${props => props.bgColor};
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
     
     h2 {
         margin-top: 2.5rem;

@@ -31,11 +31,11 @@ const Header = () => {
             </DivLogo>
             <DivLinks menuOpen={menu}>
                 <Close onClick={showMenu}/>
-                <Links href='#projetos'>Projetos</Links>
-                <Links href='#servicos'>Serviços</Links>
-                <Links href='#about'>Quem somos</Links>
-                <Links href='#equipe'>Equipe</Links>
-                <Links href='#contatos'>Contato</Links>
+                <Links href='#projetos' onClick={() =>setMenu(!menu)}>Projetos</Links>
+                <Links href='#servicos' onClick={() =>setMenu(!menu)}>Serviços</Links>
+                <Links href='#about' onClick={() =>setMenu(!menu)}>Quem somos</Links>
+                <Links href='#equipe' onClick={() =>setMenu(!menu)}>Equipe</Links>
+                <Links href='#contatos' onClick={() =>setMenu(!menu)}>Contato</Links>
             </DivLinks>
             <DivSociais>
                 <Links href='https://web.whatsapp.com/' target='_blank'><WhatsApp/></Links>

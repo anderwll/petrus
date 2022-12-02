@@ -10,7 +10,7 @@ const DivHeader = styled.div<HeaderProps>`
     align-items: center;
     justify-content: space-around;
     position: fixed;
-    z-index: 999;
+    z-index: 1;
     width: 100%;
     height: ${props => props.scrollOn ? '8rem' : '10rem'};
     background: ${props => props.scrollOn && props.theme.bgPrimary};
@@ -41,7 +41,6 @@ const DivLinks = styled.div<HeaderProps>`
     @media only screen and ( max-width: 968px) {
         position: fixed;
         display: ${props => props.menuOpen ? 'flex' : 'none'};
-        justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 100vw;
