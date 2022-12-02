@@ -16,8 +16,8 @@ const DivHeader = styled.div<HeaderProps>`
     background: ${props => props.scrollOn && props.theme.bgPrimary};
     box-shadow: ${props => props.scrollOn && props.theme.boxShadow};
     backdrop-filter: ${props => props.scrollOn && `blur(2rem)`};
-    border: ${props => props.scrollOn && '1px solid rgba(255, 255, 255, 0.18)'};
-    border-radius: ${props => props.scrollOn && '0.5rem'};
+    border-bottom: ${props => props.scrollOn && '1px solid rgba(255, 255, 255, 0.18)'};
+    border-radius: ${props => props.scrollOn && '0 0 0.5rem 0.5rem'};
     transition: .4s ease;
 
     @media only screen and ( max-width: 968px) {
