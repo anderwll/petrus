@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import { DivLinks, DivLogo, DivHeader, DivSociais, DivMenuIcon, Links } from './styled';
+import { DivLinks, DivHeader, DivSociais, DivMenuIcon, Links } from './styled';
 
 // --- ICONS
-import { Instagram, Facebook, WhatsApp, Menu, Close } from '@mui/icons-material';
+import { Instagram, Facebook, WhatsApp, Menu, Close} from '@mui/icons-material';
 
 const Header = () => {
     const [menu, setMenu] = useState(false);
@@ -24,11 +24,9 @@ const Header = () => {
     document.addEventListener('scroll', rolar);
     return (
         <DivHeader scrollOn={scroll}>
-            <DivLogo>
-                <Links href='#'>
-                    <img src="" alt="PETRUS ARQUITETURA" />
-                </Links>
-            </DivLogo>
+            <Links href='#'>
+                <img style={{width: '8rem', marginLeft: '2rem'}} src="./assets/image/logo.png" alt="PETRUS ARQUITETURA" /> 
+            </Links>
             <DivLinks menuOpen={menu}>
                 <Close onClick={showMenu}/>
                 <Links href='#projects' onClick={showMenu}>Projetos</Links>

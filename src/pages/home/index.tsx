@@ -21,7 +21,7 @@ const Home = () => {
           <Equipe />
           <Contatos />
           <DivButton>
-            <ButtonFloating />
+          <ButtonFloating />
           </DivButton>
           <Footer />
         </>

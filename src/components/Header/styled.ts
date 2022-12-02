@@ -19,14 +19,10 @@ const DivHeader = styled.div<HeaderProps>`
     border: ${props => props.scrollOn && '1px solid rgba(255, 255, 255, 0.18)'};
     border-radius: ${props => props.scrollOn && '0.5rem'};
     transition: .4s ease;
-    
-`;
- 
-const DivLogo = styled.div`
-    img {
-        width: 7rem;
-        height: 4rem;
-    }
+
+    @media only screen and ( max-width: 968px) {
+        justify-content: space-between;
+    }  
 `;
 
 const DivLinks = styled.div<HeaderProps>`
@@ -96,4 +92,4 @@ const DivMenuIcon =  styled.div<HeaderProps>`
     } 
 `;
 
-export { DivHeader, DivLogo, DivLinks, Links, DivSociais, DivMenuIcon};
+export { DivHeader, DivLinks, Links, DivSociais, DivMenuIcon};
