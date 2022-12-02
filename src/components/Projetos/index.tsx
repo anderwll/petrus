@@ -3,7 +3,7 @@ import { DivGallery, DivPics, DivModel} from './styled';
 import { dados } from './gallery';
 import { Close, Style } from '@mui/icons-material';
 import { Typography } from '@mui/material'
-import { DivDef, SectionDef } from '../styledDefault';
+import { SectionDef } from '../styledDefault';
 import ButtonDefault from '../Button';
 
 const Projetos = () => {
@@ -17,18 +17,15 @@ const Projetos = () => {
 
     return (
         <SectionDef id='projetos'>
-
-            <DivDef>
-                <Typography 
-                    variant="h2" 
-                    color="initial"
-                    data-aos="fade-right"
-                    data-aos-duration='800'
-                >
-                    Projetos
-                </Typography>
-            </DivDef>
-            
+            <Typography 
+                variant="h2" 
+                color="initial"
+                data-aos="fade-down"
+                data-aos-duration='800'
+            >
+                Projetos
+            </Typography>
+           
             <DivModel imgOpen={model}>
                 <img src={tempImgSrc} alt='NOT FOUND' />
                 <Close onClick={() => setModel(false)}/>

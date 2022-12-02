@@ -16,19 +16,10 @@ const SectionDef = styled.section<SectionDefProps>`
     background-color: ${props => props.bgColor};
     background-size: cover;
     background-position: center;
+    
     h2 {
         margin-top: 2.5rem;
     }
 `;
 
-const DivDef = styled.div`
-    width: 60%;
-    padding: 1.5rem;
-
-
-    @media screen and (max-width: 998px) {
-        width: 80%;
-    }
-`;
-
-export { SectionDef, DivDef };
+export { SectionDef };

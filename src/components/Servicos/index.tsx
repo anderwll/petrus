@@ -7,19 +7,13 @@ import {texto1} from './text'
 import ButtonDefault from '../Button';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
-
-
 const Servicos = () => {
     return (
-        <SectionDef id='servicos'>
-            <Typography 
-                variant="h2" 
-                color="initial" 
-                data-aos="fade-up"
-                data-aos-duration='800'
-            >
-                Serviços
-            </Typography>
+        <SectionDef id='servicos'
+            data-aos="fade-up"
+            data-aos-duration='800'
+        >
+            <Typography variant="h2">Serviços</Typography>
             <DivServicos>
                     <Grid container justifyContent='center' spacing={8}>
                         <Grid 

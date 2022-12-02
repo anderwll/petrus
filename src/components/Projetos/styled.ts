@@ -16,7 +16,7 @@ const DivGallery = styled.div`
     column-width: 33.33%;
 
     @media screen and (max-width: 768px) {
-        width: 100vw;
+        width: 90vw;
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;

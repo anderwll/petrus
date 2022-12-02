@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <DivFooter>
             <Typography variant="body1">
-                &copy; 2022 - Created by <a href='https://www.instagram.com/anderwll/' target='_blank' rel="noreferrer">Anderson Wilmsen</a> 🚀
+                &copy; Copyright Petrus Arquitetura 2022 - Created by <a href='https://www.instagram.com/anderwll/' target='_blank' rel="noreferrer">Anderson Wilmsen</a> 🚀
             </Typography>
         </DivFooter>
     );

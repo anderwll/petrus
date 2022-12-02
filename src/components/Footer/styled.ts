@@ -6,15 +6,19 @@ const DivFooter = styled.div`
     align-items: center;
     width: 100%;
     padding: 2rem;
-    background-color: #333;
+    background-color: #3333;
     p {
         font-size: 1.4rem;
-        color: ${props => props.theme.secondary}
+        color: ${props => props.theme.bgPrimary}
     }
 
     a {
         text-decoration: none;
-        color: ${props => props.theme.secondary};
+        color: ${props => props.theme.bgPrimary};
+    }
+
+    a:hover {
+        color: ${props => props.theme.secondary}
     }
 `;
 

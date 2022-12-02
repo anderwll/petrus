@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const DivEquipe = styled.div`
-    width: 60%; 
+    width: 50vw; 
     padding: 10rem 0 10rem 0;
     
     h5 {
-        margin: 4rem 0;
+        margin: 2rem 0;
     }
 
     p {
@@ -14,13 +14,13 @@ const DivEquipe = styled.div`
     }
 
     @media screen and (max-width: 600px) {
-        width: 100%;
+        width: 90vw;
     }
 `;
 
 const ImgPerfil = styled.img`
     width: 80%;
-    height: 40rem;
+    height: 38rem;
 
     @media screen and (max-width: 900px) {
         width: 100%;

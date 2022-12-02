@@ -15,6 +15,7 @@ const Contatos = () => {
                     display='flex' 
                     justifyContent='end' 
                     alignItems= 'center'
+                    textAlign='center'
                     flexDirection='column'
                     gap={6}
                 >

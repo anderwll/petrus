@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
-import { SectionDef, DivDef } from '../styledDefault';
+import { SectionDef } from '../styledDefault';
 import { DivEquipe, DivSociais, ImgPerfil } from './styled';
 import { Links } from '../Header/styled';
 import { Instagram } from '@mui/icons-material';
@@ -11,7 +11,6 @@ import { desc1 } from './text';
 const Equipe = () => {
     return (
         <SectionDef id='equipe'>
-            <DivDef>
                 <Typography 
                     variant="h2" 
                     color="initial"
@@ -20,8 +19,6 @@ const Equipe = () => {
                 >
                     Equipe
                 </Typography>
-            </DivDef>
-
             <DivEquipe>
                 <Grid container>
                     <Grid 
@@ -51,7 +48,7 @@ const Equipe = () => {
                         </DivSociais>
                     </Grid>
                 </Grid>
-                <Grid container marginTop={10} flexDirection='row-reverse'>
+                <Grid container marginTop={8} flexDirection='row-reverse'>
                   <Grid 
                         item 
                         lg={6} 

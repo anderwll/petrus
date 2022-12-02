@@ -13,6 +13,12 @@ const DivText = styled.div`
     h3 {
         color: ${props => props.theme.secondary};
     }
+
+    @media only screen and ( max-width: 480px) {
+        h3  {
+            font-size: 1.6rem;
+        }
+    } 
 `;
 
 export { DivText };

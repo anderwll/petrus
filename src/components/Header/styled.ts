@@ -66,12 +66,12 @@ const DivLinks = styled.div<HeaderProps>`
 const DivSociais = styled.div`
    @media only screen and ( max-width: 1268px) {
       display: none;
-  } 
+    } 
 `;
 
 const Links = styled.a`
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin: 2rem 1rem;
     color: ${props => props.theme.primary};
     svg {

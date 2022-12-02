@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography'
 import { texto1, texto2, texto3 } from './text';
 import ButtonDefault from '../Button';
 import { SectionDef } from '../styledDefault';
-import SearchIcon from '@mui/icons-material/Search';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const About = () => {
     return (
@@ -18,7 +18,7 @@ const About = () => {
                 <Typography variant="body2" color="initial">{texto2}</Typography>
                 <Typography variant="body2" color="initial">{texto2}</Typography>
                 <Typography variant="body2" color="initial">{texto3}</Typography>
-                <ButtonDefault texto='Quero saber mais..' hRef='#' icon={<SearchIcon/>}/>
+                <ButtonDefault texto='Quero saber mais...' hRef='#equipe' icon={<ArrowDownwardIcon/>}/>
             </DivText>
         </SectionDef>
     );
