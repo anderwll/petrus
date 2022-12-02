@@ -52,7 +52,7 @@ const DivModel = styled.div<DivModelPops>`
     opacity: ${props => props.imgOpen ? '1' : '0'};
     transform: ${props => props.imgOpen ? 'scale(1)' : 'scale(0)'};
     overflow: hidden;
-    z-index: 999;
+    z-index: 9999;
 
     img {
         width: auto;

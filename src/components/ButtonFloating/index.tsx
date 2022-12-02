@@ -6,7 +6,7 @@ import { DivButtonFloating } from './styled';
 const ButtonFloating = () => {
     return (
         <DivButtonFloating>
-            <Fab color="success" aria-label="add" href='https://web.whatsapp.com/' target='_blank'>
+            <Fab color="success" aria-label="add" href='https://api.whatsapp.com/send?phone=5567999124692&text=Seja%20bem%20vindo!%20' target='_blank'>
                 <WhatsAppIcon />
             </Fab>  
         </DivButtonFloating>

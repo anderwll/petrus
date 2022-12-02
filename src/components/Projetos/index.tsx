@@ -43,7 +43,7 @@ const Projetos = () => {
                     )
                 })}
             </DivGallery>
-            <ButtonDefault texto='Quero descobrir o meu estilo' hRef='#' icon={<Style/>}/>
+            <ButtonDefault texto='Quero descobrir o meu estilo' hRef='https://refresher.com.br/45875/teste-estilo' target='_blank' icon={<Style/>}/>
         </SectionDef>
     );
 };

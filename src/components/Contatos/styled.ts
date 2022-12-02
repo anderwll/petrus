@@ -7,6 +7,7 @@ const DivContatos = styled.div`
     width: 99%;
     p {
         font-size: ${props => props.theme.fontSize};
+        color: ${props => props.theme.primary}
     }
 `;
 

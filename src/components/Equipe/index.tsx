@@ -32,7 +32,7 @@ const Equipe = () => {
                         data-aos="fade-right"
                         data-aos-duration='1000'
                     >
-                        <ImgPerfil src='./assets/image/perfil1.jpg' alt='Arquiteto 1'/>
+                        <ImgPerfil src='./assets/image/ju.webp' alt='Arquiteto 1'/>
                     </Grid>
                     <Grid 
                         item 
@@ -43,11 +43,11 @@ const Equipe = () => {
                         data-aos="fade-left"
                         data-aos-duration='1000'
                     >
-                        <Typography variant="h3" color="initial">Arquiteto Nome</Typography>
-                        <Typography variant="h5" color="initial">Arquiteto & Sócio</Typography>
+                        <Typography variant="h3" color="initial">Juliana Servian</Typography>
+                        <Typography variant="h5" color="initial">Arquiteta & Sócia</Typography>
                         <Typography variant="body1" color="initial">{desc1}</Typography>
                         <DivSociais>
-                            <Links href='https://www.instagram.com/' target='_blank'><Instagram/></Links>
+                            <Links href='https://www.instagram.com/servianjuliana/' target='_blank'><Instagram/></Links>
                         </DivSociais>
                     </Grid>
                 </Grid>
@@ -63,7 +63,7 @@ const Equipe = () => {
                         data-aos="fade-left"
                         data-aos-duration='1000'
                     >  
-                        <ImgPerfil src='./assets/image/perfil2.jpg' alt='Arquiteto 1'/>
+                        <ImgPerfil src='./assets/image/joao.webp' alt='Arquiteto 1'/>
                     </Grid>
                     <Grid 
                         item
@@ -74,11 +74,11 @@ const Equipe = () => {
                         data-aos="fade-right"
                         data-aos-duration='1000'
                     >
-                        <Typography variant="h3" color="initial">Arquiteto Nome</Typography>
+                        <Typography variant="h3" color="initial">João Pedro Cáceres Lenis</Typography>
                         <Typography variant="h5" color="initial">Arquiteto & Sócio</Typography>
                         <Typography variant="body1" color="initial">{desc1}</Typography>
                         <DivSociais>
-                            <Links href='https://www.instagram.com/' target='_blank'><Instagram/></Links>
+                            <Links href='https://www.instagram.com/ojoaopedro_arq/' target='_blank'><Instagram/></Links>
                         </DivSociais>
                     </Grid>
                 </Grid>

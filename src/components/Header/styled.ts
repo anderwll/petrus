@@ -46,14 +46,14 @@ const DivLinks = styled.div<HeaderProps>`
         flex-direction: column;
         width: 100vw;
         height: 100vh;
-        z-index: 999;
+        z-index: 9999;
         top: 0;
         background-color: ${props => props.menuOpen && 'rgba(0, 0, 0, 0.942)'};
         text-transform: uppercase;
 
         a {
             color: ${props => props.menuOpen && props.theme.secondary};
-
+            font-size: 2.5rem;
         }
 
         svg {
@@ -71,7 +71,8 @@ const DivSociais = styled.div`
 
 const Links = styled.a`
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: ${props => props.theme.fontSize};
+    font-weight: 600;
     margin: 2rem 1rem;
     color: ${props => props.theme.primary};
     svg {

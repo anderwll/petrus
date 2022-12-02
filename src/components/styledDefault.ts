@@ -20,6 +20,11 @@ const SectionDef = styled.section<SectionDefProps>`
     
     h2 {
         margin-top: 2.5rem;
+        font-weight: bold;
+    }
+
+    h3, h4 {
+        font-weight: bold;
     }
 `;
 

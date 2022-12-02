@@ -8,7 +8,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const About = () => {
     return (
-        <SectionDef id='about' bgImg='assets/image/img4.jpg'>
+        <SectionDef id='about' bgImg='assets/image/img4.webp'>
             <DivText 
                 data-aos="fade-right"
                 data-aos-duration='1000'

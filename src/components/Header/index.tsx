@@ -38,9 +38,9 @@ const Header = () => {
                 <Links href='#contacts' onClick={showMenu}>Contato</Links>
             </DivLinks>
             <DivSociais>
-                <Links href='https://web.whatsapp.com/' target='_blank'><WhatsApp/></Links>
+                <Links href='https://api.whatsapp.com/send?phone=5567999124692&text=Seja%20bem%20vindo!%20' target='_blank'><WhatsApp/></Links>
                 <Links href='https://www.instagram.com/petrusarquitetura/' target='_blank'><Instagram/></Links>
-                <Links href='https://www.facebook.com/' target='_blank'><Facebook/></Links>
+                <Links href='https://www.facebook.com/petrusarquitetura' target='_blank'><Facebook/></Links>
             </DivSociais>
             <DivMenuIcon menuOpen={menu}>
                 <Menu onClick={showMenu}/>

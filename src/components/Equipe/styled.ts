@@ -36,6 +36,7 @@ const ImgPerfil = styled.img`
 `;
 
 const DivSociais = styled.div`
+    margin-top: 2rem;
     a:hover {
         color: #090979;
     }

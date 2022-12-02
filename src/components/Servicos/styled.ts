@@ -15,13 +15,9 @@ const DivServicos = styled.div`
         font-size: ${props => props.theme.fontSize};
         width: 100%;
         text-align: center;
+        
     }
     
-    h3 {
-        font-size: 2.5rem;
-        font-weight: 500;
-    }
-
     @media screen and (max-width: 1200px) {
         width: 80vw; 
     } 

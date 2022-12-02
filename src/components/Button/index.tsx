@@ -5,14 +5,15 @@ import { DivButtonDefault } from './styled';
 interface ButtonDefaultProps {
     icon?: React.ReactNode,
     texto: string,
-    hRef: string
+    hRef: string,
+    target?: string
 }
 
 
-const ButtonDefault: React.FC<ButtonDefaultProps> = ({icon, texto, hRef}) => {
+const ButtonDefault: React.FC<ButtonDefaultProps> = ({icon, texto, hRef, target}) => {
     return (
         <DivButtonDefault>
-            <Button variant='contained' endIcon={icon} href={hRef}> 
+            <Button variant='contained' endIcon={icon} href={hRef} target={target}> 
                 {texto} 
             </Button>
         </DivButtonDefault>

@@ -7,7 +7,7 @@ import { Grid } from '@mui/material'
 
 const Contatos = () => {
     return (
-        <SectionDef bgImg='./assets/image/img8.jpg' id='contacts'>
+        <SectionDef bgImg='./assets/image/img8.webp' id='contacts'>
            <DivContatos>
                 <Grid container spacing={8}>
                   <Grid item 
@@ -21,14 +21,13 @@ const Contatos = () => {
                 >
                     <Typography variant="h3">PETRUS ARQUITETURA</Typography>
                     <DivSociais>
-                        <Links href='https://web.whatsapp.com/' target='_blank'><WhatsApp/></Links>
+                        <Links href='https://api.whatsapp.com/send?phone=5567999124692&text=Seja%20bem%20vindo!%20' target='_blank'><WhatsApp/></Links>
                         <Links href='https://www.instagram.com/petrusarquitetura/' target='_blank'><Instagram/></Links>
-                        <Links href='https://www.facebook.com/' target='_blank'><Facebook/></Links>
+                        <Links href='https://www.facebook.com/petrusarquitetura' target='_blank'><Facebook/></Links>
                     </DivSociais>
-                    <Typography variant="h4">Levando a você a sua melhor experiência de vida!</Typography>
+                    <Typography variant="h4">Entregamos valor e experiências que constroem seus sonhos.</Typography>
                     <Typography variant="body1">petrusarquitetura@gmail.com</Typography>
-                    <Typography variant="body1">Rua Fulano De Tal, 256, sala01, Bento Gonçalves, RS</Typography>
-            
+                    <Typography variant="body1">Rua Candelária, 256, bloco01, Bento Gonçalves, RS</Typography>
                   </Grid>
                 </Grid>
            </DivContatos> 

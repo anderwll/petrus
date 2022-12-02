@@ -29,9 +29,9 @@ const Servicos = () => {
                                 gap: 4 
                             }} 
                         >
-                            <img src="./assets/image/img2.jpg" alt="NOT FOUND" />
+                            <img src="./assets/image/residencial.webp" alt="NOT FOUND" />
 
-                            <Typography variant="h3">Projetos residenciais</Typography>
+                            <Typography variant="h4">Projetos residências</Typography>
                           
                             <Typography variant="body1">{texto1}</Typography>
                             
@@ -49,9 +49,9 @@ const Servicos = () => {
                                 gap: 4 
                             }} 
                         >
-                            <img src="./assets/image/img2.jpg" alt="NOT FOUND" />
+                            <img src="./assets/image/acompanhamento.webp" alt="NOT FOUND" />
 
-                            <Typography variant="h3">Projetos residenciais</Typography>
+                            <Typography variant="h4">Acompanhamento de obra</Typography>
                           
                             <Typography variant="body1">{texto1}</Typography>
                             
@@ -69,16 +69,16 @@ const Servicos = () => {
                                 gap: 4 
                             }} 
                         >
-                            <img src="./assets/image/img2.jpg" alt="NOT FOUND" />
+                            <img src="./assets/image/consultoria.webp" alt="NOT FOUND" />
 
-                            <Typography variant="h3">Projetos residenciais</Typography>
+                            <Typography variant="h4">Consultoria online</Typography>
                           
                             <Typography variant="body1">{texto1}</Typography>
                             
                         </Grid>
                     </Grid>
                 </DivServicos>
-                <ButtonDefault hRef='#' texto='Quero fazer o meu orçamento' icon={<AttachMoneyIcon/>}/>
+                <ButtonDefault texto='Quero fazer o meu orçamento' hRef='https://refresher.com.br/45875/briefing' target='_blank' icon={<AttachMoneyIcon/>}/>
         </SectionDef>
     );
 };
