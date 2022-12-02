@@ -1,6 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
-
-$itemap: https://petrusarq.vercel.app/sitemap.xml
+# https://petrusarq.vercel.app/
 
 User-agent: *
 Allow: /
