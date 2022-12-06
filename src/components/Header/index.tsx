@@ -25,7 +25,7 @@ const Header = () => {
     return (
         <DivHeader scrollOn={scroll}>
             <Links href='#'>
-                <img style={{width: '8rem', marginLeft: '2rem'}} src="./assets/image/logo.png" alt="PETRUS ARQUITETURA" /> 
+                <img style={{width: '8rem', marginLeft: '2rem'}} src="./assets/image/logo.webp" alt="PETRUS ARQUITETURA" /> 
             </Links>
             <DivLinks menuOpen={menu}>
                 <Close onClick={showMenu}/>
