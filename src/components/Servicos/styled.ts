@@ -2,25 +2,17 @@ import styled from "styled-components";
 
 const DivServicos = styled.div`
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 4rem 0;
-    width: 60vw;
-
-    img {
-        height: 28rem;
-    }
-
-    p {
-        width: 100%;
-        text-align: center;
-        
-    }
+    width: auto;
     
-    @media screen and (max-width: 1200px) {
-        width: 80vw; 
-    } 
-    
+
+
+    &:hover {
+        filter: brightness(45%);
+        cursor: pointer;
+    }
+ 
 `;
 
 export { DivServicos };

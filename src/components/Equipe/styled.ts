@@ -37,6 +37,12 @@ const ImgPerfil = styled.img`
 
 const DivSociais = styled.div`
     margin-top: 2rem;
+
+    a {
+        color: ${props => props.theme.primary}
+    }
+
+
     a:hover {
         color: #090979;
     }
