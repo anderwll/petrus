@@ -32,7 +32,7 @@ const DivPics = styled.div`
     cursor: pointer;
 
     &&:hover {
-        filter: opacity(.7);
+        filter: brightness(30%)
     }
 `;
 

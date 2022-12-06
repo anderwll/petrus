@@ -9,7 +9,7 @@ const SectionDef = styled.section<SectionDefProps>`
     display: flex; 
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     padding: 1.6rem;
     background-image: url(${props => props.bgImg});
@@ -26,6 +26,8 @@ const SectionDef = styled.section<SectionDefProps>`
     h3, h4 {
         font-weight: bold;
     }
+
+    
 `;
 
 export { SectionDef };

@@ -1,25 +1,43 @@
 import React from 'react';
-import { SectionDef } from '../styledDefault';
-import { DivText } from './styled';
 import Typography from '@mui/material/Typography'
-import ButtonDefault from '../Button';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { DivCarrousel } from './styled';
+import { Carousel } from 'react-bootstrap';
 
 const Carrousel = () => {
     return (
-        <SectionDef  bgImg='./assets/image/img1.webp'>
+            <DivCarrousel>
+                <Carousel 
+                    fade 
+                    nextIcon={false} 
+                    prevIcon={false}>
+                    <Carousel.Item>
+                        <img src="./assets/image/img4.webp" alt="First slide" />
+                        <Carousel.Caption>
 
-            <DivText>
-                <Typography variant="h3" color="initial">Entregamos valor e experiências que constroem seus sonhos.</Typography>
-                <ButtonDefault 
-                    hRef='#projects' 
-                    texto='Conheça nossos projetos' 
-                    icon={<ArrowDownwardIcon/>}
-                />
-            </DivText>
-            
-        </SectionDef>
+                        <Typography variant="h2" color="initial">Entregamos valor e experiências que constroem seus sonhos.</Typography>
+                        
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src="./assets/image/img1.webp"alt="Second slide" />
+                        <Carousel.Caption>
+
+                        <Typography variant="h2" color="initial">Entregamos valor e experiências que constroem seus sonhos.</Typography>
+                        
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src="./assets/image/img6.webp"alt="Third slide" />
+                        <Carousel.Caption>
+
+                        <Typography variant="h2" color="initial">Entregamos valor e experiências que constroem seus sonhos.</Typography>
+                
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </DivCarrousel> 
     );
 };
 
 export default Carrousel;
+

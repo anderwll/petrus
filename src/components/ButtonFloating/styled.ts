@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const DivButtonFloating = styled.div`
-    z-index: 999;
+    z-index: 9999;
     svg {
         font-size: 3rem;
     }

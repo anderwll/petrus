@@ -70,7 +70,7 @@ const Links = styled.a`
     font-size: ${props => props.theme.fontSize};
     font-weight: 600;
     margin: 2rem 1rem;
-    color: ${props => props.theme.primary};
+    color: ${props => props.theme.secondary};
     svg {
         font-size: 2.5rem;
     } 

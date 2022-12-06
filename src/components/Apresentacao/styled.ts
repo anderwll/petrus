@@ -1,24 +1,25 @@
 import styled from "styled-components";
 
-const DivText = styled.div`
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 4rem;
-    width: 100%;
-    height: 90vh;
+const DivCarrousel = styled.div`
+    z-index: 0;
 
-    h3 {
+    img {
+        width: 100vw;
+        height: 90vh;
+        filter: brightness(50%)
+    }
+
+
+    h2 { 
         color: ${props => props.theme.secondary};
+        margin: 2.5rem;
     }
 
     @media only screen and ( max-width: 480px) {
-        h3  {
-            font-size: 1.6rem;
+        h2  {
+            font-size: 2rem;
         }
     } 
 `;
 
-export { DivText };
+export { DivCarrousel };
