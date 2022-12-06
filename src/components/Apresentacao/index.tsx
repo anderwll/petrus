@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Typography from '@mui/material/Typography'
 import { DivCarrousel } from './styled';
 import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ButtonDefault from '../Button';
 
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
@@ -28,7 +29,7 @@ const Carrousel = () => {
                 fade 
                 nextIcon={false} 
                 prevIcon={false}>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item interval={1500}>
                     <img src="./assets/image/img1.webp" alt="First slide" />
                     <Carousel.Caption>
 
@@ -36,7 +37,7 @@ const Carrousel = () => {
                     
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item interval={1500}>
                     <img src="./assets/image/img7.webp"alt="Second slide" />
                     <Carousel.Caption>
 
@@ -44,7 +45,7 @@ const Carrousel = () => {
                     
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item interval={1500}>
                     <img src="./assets/image/img6.webp"alt="Third slide" />
                     <Carousel.Caption>
 
@@ -53,7 +54,7 @@ const Carrousel = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <ButtonDefault none={scroll} hRef='#projects' texto='Conheça nossos projetos' icon={<ArrowDownwardIcon/>}/>
+            <ButtonDefault variant='outlined' color='inherit' none={scroll} hRef='#projects' texto='Conheça nossos projetos' icon={<ArrowDownwardIcon/>}/>
         </DivCarrousel> 
     );
 };

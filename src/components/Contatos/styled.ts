@@ -9,19 +9,24 @@ const DivContatos = styled.div`
         font-size: ${props => props.theme.fontSize};
         color: ${props => props.theme.primary}
     }
+
+    svg {
+        font-size: 5rem;
+    }
 `;
 
-const DivSociais = styled.div``;
+const DivSociais = styled.div`
+    svg {
+            font-size: 2.5rem;
+    } 
+
+`;
 
 const Links = styled.a`
     text-decoration: none;
     font-size: 2rem;
     margin: 2rem 1rem;
     color: #333;
-
-    svg {
-        font-size: 2.5rem;
-    } 
 
     &:hover {
         color: #fff;

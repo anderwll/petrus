@@ -78,7 +78,7 @@ const Servicos = () => {
                         </Grid>
                     </Grid>
                 </DivServicos>
-                <ButtonDefault texto='Faça o seu orçamento' hRef='https://refresher.com.br/45875/briefing' target='_blank' icon={<AttachMoneyIcon/>}/>
+                <ButtonDefault variant='outlined' color='inherit' texto='Faça o seu orçamento' hRef='https://refresher.com.br/45875/briefing' target='_blank' icon={<AttachMoneyIcon/>}/>
         </SectionDef>
     );
 };

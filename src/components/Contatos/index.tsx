@@ -4,7 +4,7 @@ import { DivContatos, DivSociais, Links } from './styled';
 import Typography from '@mui/material/Typography'
 import { Facebook, Instagram, WhatsApp } from '@mui/icons-material';
 import { Grid } from '@mui/material';
-import { KeyboardDoubleArrowUp } from '@mui/icons-material';
+import HomeIcon from '@mui/icons-material/Home';
 
 const Contatos = () => {
     return (
@@ -27,9 +27,8 @@ const Contatos = () => {
                         <Links href='https://www.facebook.com/petrusarquitetura' target='_blank'><Facebook/></Links>
                     </DivSociais>
                     <Typography variant="h4">Entregamos valor e experiências que constroem seus sonhos.</Typography>
-                    <Typography variant="body1">petrusarquitetura@gmail.com</Typography>
-                    <Typography variant="body1">Rua Candelária, 256, bloco01, Bento Gonçalves, RS</Typography>
-                    <Links href='#'><KeyboardDoubleArrowUp/> Voltar ao topo <KeyboardDoubleArrowUp/></Links>
+                    <Typography variant="body1">contatopetrusarquitetura@gmail.com</Typography>
+                    <Links href='#'><HomeIcon/></Links>
                   </Grid>
                 </Grid>
            </DivContatos> 

@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 const DivCarrousel = styled.div`
     position: relative;
+    width: 100%;
+    height: 90vh;
 
     img {
         width: 100vw;

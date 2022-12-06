@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     html {
         font-size: 62.5%; 
         scroll-behavior: smooth;
-        scroll-padding-top: 10rem;
+        scroll-padding-top: 9rem;
     }
 
     p {

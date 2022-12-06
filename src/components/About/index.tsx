@@ -18,7 +18,7 @@ const About = () => {
                 <Typography variant="body2" color="initial">{texto2}</Typography>
                 <Typography variant="body2" color="initial">{texto2}</Typography>
                 <Typography variant="body2" color="initial">{texto3}</Typography>
-                <ButtonDefault texto='Saiba mais...' hRef='#team' icon={<ArrowDownwardIcon/>}/>
+                <ButtonDefault variant='text' color='info' texto='Saiba mais...' hRef='#team' icon={<ArrowDownwardIcon/>}/>
             </DivText>
         </SectionDef>
     );
