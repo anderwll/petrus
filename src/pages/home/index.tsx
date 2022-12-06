@@ -8,7 +8,6 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Projetos from '../../components/Projetos';
 import Servicos from '../../components/Servicos';
-import { DivButton } from './styled';
 
 const Home = () => {
     return (
@@ -20,9 +19,7 @@ const Home = () => {
           <About />
           <Equipe />
           <Contatos />
-          <DivButton>
           <ButtonFloating />
-          </DivButton>
           <Footer />
         </>
     );

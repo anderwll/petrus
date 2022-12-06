@@ -3,13 +3,14 @@ import { SectionDef } from '../styledDefault';
 import { DivContatos, DivSociais, Links } from './styled';
 import Typography from '@mui/material/Typography'
 import { Facebook, Instagram, WhatsApp } from '@mui/icons-material';
-import { Grid } from '@mui/material'
+import { Grid } from '@mui/material';
+import { KeyboardDoubleArrowUp } from '@mui/icons-material';
 
 const Contatos = () => {
     return (
         <SectionDef bgImg='./assets/image/img8.webp' id='contacts'>
            <DivContatos>
-                <Grid container spacing={8}>
+                <Grid container>
                   <Grid item 
                     xs={12}
                     display='flex' 
@@ -17,7 +18,7 @@ const Contatos = () => {
                     alignItems= 'center'
                     textAlign='center'
                     flexDirection='column'
-                    gap={6}
+                    gap={4}
                 >
                     <Typography variant="h3">PETRUS ARQUITETURA</Typography>
                     <DivSociais>
@@ -28,6 +29,7 @@ const Contatos = () => {
                     <Typography variant="h4">Entregamos valor e experiências que constroem seus sonhos.</Typography>
                     <Typography variant="body1">petrusarquitetura@gmail.com</Typography>
                     <Typography variant="body1">Rua Candelária, 256, bloco01, Bento Gonçalves, RS</Typography>
+                    <Links href='#'><KeyboardDoubleArrowUp/> Voltar ao topo <KeyboardDoubleArrowUp/></Links>
                   </Grid>
                 </Grid>
            </DivContatos> 

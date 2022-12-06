@@ -12,12 +12,9 @@ const DivHeader = styled.div<HeaderProps>`
     position: fixed;
     z-index: 99;
     width: 100%;
-    height: ${props => props.scrollOn ? '8rem' : '10rem'};
-    background: ${props => props.scrollOn && props.theme.bgPrimary};
-    box-shadow: ${props => props.scrollOn && props.theme.boxShadow};
+    height: ${props => props.scrollOn ? '8.5rem' : '10rem'};
+    background: ${props => props.scrollOn && 'rgba(0, 0, 0, 0.432)'};
     backdrop-filter: ${props => props.scrollOn && `blur(2rem)`};
-    border-bottom: ${props => props.scrollOn && '1px solid rgba(255, 255, 255, 0.18)'};
-    border-radius: ${props => props.scrollOn && '0 0 0.5rem 0.5rem'};
     transition: .4s ease;
 
     @media only screen and ( max-width: 968px) {
@@ -76,7 +73,7 @@ const Links = styled.a`
     } 
 
     &:hover {
-        color: ${props => props.theme.secondary};
+        color: ${props => props.theme.primary};
     }
 `;
 
@@ -85,6 +82,7 @@ const DivMenuIcon =  styled.div<HeaderProps>`
     right: 2.5rem;
     svg {
         font-size: 3rem;
+        color: ${props => props.theme.secondary};
         opacity: ${props => props.menuOpen ? '0': '1'};
     }
     @media only screen and ( min-width: 968px) {

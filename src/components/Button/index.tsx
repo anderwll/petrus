@@ -6,13 +6,14 @@ interface ButtonDefaultProps {
     icon?: React.ReactNode,
     texto: string,
     hRef: string,
-    target?: string
+    target?: string, 
+    none?: boolean
 }
 
 
-const ButtonDefault: React.FC<ButtonDefaultProps> = ({icon, texto, hRef, target}) => {
+const ButtonDefault: React.FC<ButtonDefaultProps> = ({icon, texto, hRef, target, none}) => {
     return (
-        <DivButtonDefault>
+        <DivButtonDefault display={none}>
             <Button variant='contained' endIcon={icon} href={hRef} target={target}> 
                 {texto} 
             </Button>

@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-const DivButtonDefault = styled.div`
-    display: flex;
+interface DivButtonDefaultProps {
+    display?: boolean
+}
+
+const DivButtonDefault = styled.div<DivButtonDefaultProps>`
+    display: ${props => props.display ? 'none' : 'flex'};
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -13,7 +17,7 @@ const DivButtonDefault = styled.div`
         background-size: 300% 300%;
         color: ${props => props.theme.secondary};
         padding: 1.5rem 2.5rem;
-        font-size: 1.4rem;
+        font-size: 1.4rem !important;
         animation: show 4s ease infinite;
     }
 

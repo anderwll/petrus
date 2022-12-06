@@ -32,7 +32,7 @@ const DivPics = styled.div`
     cursor: pointer;
 
     &&:hover {
-        filter: brightness(30%)
+        filter: brightness(45%);
     }
 `;
 
@@ -45,7 +45,7 @@ const DivModel = styled.div<DivModelPops>`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${props => props.theme.bgPrimary};
+    background-color: rgba(0, 0, 0, 0.942);
     backdrop-filter: blur(2rem);
     transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
     visibility: ${props => props.imgOpen ? 'visible' : 'hidden'};

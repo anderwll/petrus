@@ -19,7 +19,7 @@ const SectionDef = styled.section<SectionDefProps>`
     overflow-x: hidden;
     
     h2 {
-        margin-top: 2.5rem;
+        margin-top: 6rem;
         font-weight: bold;
     }
 

@@ -12,7 +12,6 @@ const DivServicos = styled.div`
     }
 
     p {
-        font-size: ${props => props.theme.fontSize};
         width: 100%;
         text-align: center;
         

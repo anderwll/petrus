@@ -5,16 +5,13 @@ const DivFooter = styled.div`
     justify-content: center;
     text-align: center;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #333;
-    p {
-        font-size: 1.4rem;
-        color: ${props => props.theme.bgPrimary}
-    }
-
-    a {
+  
+    a, p {
+        font-size: 1.5rem !important;
         text-decoration: none;
-        color: ${props => props.theme.bgPrimary};
+        color: ${props => props.theme.bgColor};
     }
 
     a:hover {
