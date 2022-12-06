@@ -38,7 +38,7 @@ const Carrousel = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={1500}>
-                    <img src="./assets/image/img7.webp"alt="Second slide" />
+                    <img src="./assets/image/img3.webp"alt="Second slide" />
                     <Carousel.Caption>
 
                     <Typography variant="h2" color="initial">Entregamos valor e experiências que constroem seus sonhos.</Typography>
