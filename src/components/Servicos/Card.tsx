@@ -15,7 +15,7 @@ const Card = () => {
         
             <Grid item sm={6} md={5} lg={3} xl={3}
                 sx={{
-                    backgroundImage: 'url(/assets/image/residencial.webp)',
+                    backgroundImage: 'url(/assets/apresentacao/img1.png)',
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
                     display: 'flex', 
