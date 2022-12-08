@@ -1,16 +1,10 @@
 import styled from "styled-components";
 
-const DivCarrousel = styled.div`
-    position: relative;
-    width: 100%;
-    height: 100%;
+interface DivImgProps {
+    bgImage: string
+}
 
-    img {
-        width: 100vw;
-        height: 95vh;
-        filter: brightness(45%)
-    }
-    
+const DivCarrousel = styled.div`
     h2 { 
         color: ${props => props.theme.secondary};
         margin-bottom: 2rem;
@@ -22,10 +16,26 @@ const DivCarrousel = styled.div`
     }
 
     @media only screen and ( max-width: 480px) {
-        h2  {
+       
+        h2 {
             font-size: 2rem;
         }
+
+        h4 {
+            font-size: 1.6rem;
+        }
     } 
+    
 `;
 
-export { DivCarrousel };
+const DivImg = styled.div<DivImgProps>`
+    width: 100%;
+    height: 95vh;
+    filter: brightness(45%);
+    background-image: url(${props => props.bgImage});
+    background-position: center;
+    background-size: cover;
+
+`
+
+export { DivCarrousel, DivImg };
