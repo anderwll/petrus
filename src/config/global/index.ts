@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Raleway', sans-serif !important;
+        font-family: 'Arial', sans-serif !important;
     }
 
     body {

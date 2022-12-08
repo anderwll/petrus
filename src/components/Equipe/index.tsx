@@ -6,7 +6,7 @@ import { DivEquipe, DivSociais, ImgPerfil } from './styled';
 import { Links } from '../Header/styled';
 import { Instagram } from '@mui/icons-material';
 
-import { desc1 } from './text';
+import { desc1, desc2, desc21 } from './text';
 
 const Equipe = () => {
     return (
@@ -76,7 +76,8 @@ const Equipe = () => {
                     >
                         <Typography variant="h3" color="initial">João Pedro Cáceres Lenis</Typography>
                         <Typography variant="h5" color="initial">Arquiteto & Sócio</Typography>
-                        <Typography variant="body1" color="initial">{desc1}</Typography>
+                        <Typography variant="body1" color="initial">{desc2}</Typography>
+                        <Typography variant="body1" color="initial">{desc21}</Typography>
                         <DivSociais>
                             <Links href='https://www.instagram.com/ojoaopedro_arq/' target='_blank'><Instagram/></Links>
                         </DivSociais>

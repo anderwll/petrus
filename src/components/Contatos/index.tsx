@@ -8,7 +8,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 const Contatos = () => {
     return (
-        <SectionDef bgImg='./assets/image/img8.webp' id='contacts'>
+        <SectionDef bgImg='./assets/apresentacao/img1.png' id='contacts'>
            <DivContatos>
                 <Grid container>
                   <Grid item 
@@ -26,7 +26,7 @@ const Contatos = () => {
                         <Links href='https://www.instagram.com/petrusarquitetura/' target='_blank'><Instagram/></Links>
                         <Links href='https://www.facebook.com/petrusarquitetura' target='_blank'><Facebook/></Links>
                     </DivSociais>
-                    <Typography variant="h4">Entregamos valor e experiências que constroem seus sonhos.</Typography>
+                    <Typography variant="h4">A partir daqui, seu sonho se tornará palpável!</Typography>
                     <Typography variant="body1">contatopetrusarquitetura@gmail.com</Typography>
                     <Links href='#'><HomeIcon/></Links>
                   </Grid>

@@ -6,17 +6,27 @@ interface DivModelPops {
 
 const DivGallery = styled.div`
     margin: 4rem 0 4rem 0;
-    width: 70vw;
-    box-shadow: ${[props => props.theme.boxShadow]};
+    width: 70%;
+    overflow: hidden;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
-    -webkit-column-width: 33.33%;
-    -moz-column-width: 33.33%;
-    column-width: 33.33%;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    
 
-    @media screen and (max-width: 768px) {
-        width: 90vw;
+    @media screen and (max-width: 1536px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+    @media screen and (max-width: 600px) {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
@@ -29,10 +39,13 @@ const DivGallery = styled.div`
 const DivPics = styled.div`
     -webkit-transition: all 350ms ease;
     transition: all 350ms ease;
+    transition: 0.8s ease;
+    transform: scale(1.03);
     cursor: pointer;
 
     &&:hover {
-        filter: brightness(45%);
+        filter: brightness(40%);
+        transform: scale(1.05);
     }
 `;
 

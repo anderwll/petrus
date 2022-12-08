@@ -3,6 +3,7 @@ import styled from "styled-components";
 const DivContatos = styled.div`
     background-color: ${props => props.theme.bgPrimary};
     box-shadow: ${props => props.theme.boxShadow};
+    backdrop-filter: blur(0.5rem);
     padding: 2.5rem;
     width: 99%;
     p {

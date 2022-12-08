@@ -1,60 +1,29 @@
-import React, { useState } from 'react';
-import Typography from '@mui/material/Typography'
-import { DivCarrousel } from './styled';
-import { Carousel } from 'react-bootstrap';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ButtonDefault from '../Button';
 
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import Typography from '@mui/material/Typography'
+import { Carousel } from 'react-bootstrap';
+import { DivCarrousel } from './styled';
+
+import { dados } from './apresentacao';
+
 
 const Carrousel = () => {
-    const [scroll, setScroll] = useState(false);
-
-    let ultimaPosicao:number = 0;
-    const rolar = () => {
-        let atualPosicao = window.scrollY;
-        if(atualPosicao > ultimaPosicao) {
-            setScroll(true);
-        } else {
-            setScroll(false);
-        }
-        ultimaPosicao = atualPosicao;
-    }
-
-    document.addEventListener('scroll', rolar);
-
     return (
         <DivCarrousel>
-            <Carousel 
-                fade 
-                nextIcon={false} 
-                prevIcon={false}>
-                <Carousel.Item interval={1500}>
-                    <img src="./assets/image/img1.webp" alt="First slide" />
-                    <Carousel.Caption>
-
-                    <Typography variant="h2" color="initial">Entregamos valor e experiências que constroem seus sonhos.</Typography>
-                    
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                    <img src="./assets/image/img3.webp"alt="Second slide" />
-                    <Carousel.Caption>
-
-                    <Typography variant="h2" color="initial">Entregamos valor e experiências que constroem seus sonhos.</Typography>
-                    
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                    <img src="./assets/image/img6.webp"alt="Third slide" />
-                    <Carousel.Caption>
-
-                    <Typography variant="h2" color="initial">Entregamos valor e experiências que constroem seus sonhos.</Typography>
-            
-                    </Carousel.Caption>
-                </Carousel.Item>
+            <Carousel fade nextIcon={false} prevIcon={false}>
+                {dados.map((item, index) => {
+                    return (
+                        <Carousel.Item key={index} interval={800}>
+                            <img src={item.imgSrc} alt="Images" style={{width: '100%'}} />
+                            <Carousel.Caption>
+                                <Typography variant="h2" color="initial">A PARTIR DAQUI, SEU SONHO SE TORNARÁ PALPÁVEL!</Typography>
+                                <Typography variant="h4" color="initial">SEJA BEM VINDO A NOSSA CASA.</Typography>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    )
+                })}   
             </Carousel>
-            <ButtonDefault variant='outlined' color='inherit' none={scroll} hRef='#projects' texto='Conheça nossos projetos' icon={<ArrowDownwardIcon/>}/>
         </DivCarrousel> 
     );
 };

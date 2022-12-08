@@ -20,8 +20,6 @@ const Projetos = () => {
             <Typography 
                 variant="h2" 
                 color="initial"
-                data-aos="fade-down"
-                data-aos-duration='800'
             >
                 Projetos
             </Typography>
@@ -36,7 +34,9 @@ const Projetos = () => {
                     return(
                         <DivPics 
                             key={index} 
-                            onClick={()=> getImg(item.imgSrc)}   
+                            onClick={()=> getImg(item.imgSrc)}
+                            /* data-aos="flip-down"
+                            data-aos-once="false" */  
                         >
                             <img src={item.imgSrc} alt='Images' style={{width: '100%'}}/>
                         </DivPics>

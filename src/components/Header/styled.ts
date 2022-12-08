@@ -12,8 +12,8 @@ const DivHeader = styled.div<HeaderProps>`
     position: fixed;
     z-index: 99;
     width: 100%;
-    height: ${props => props.scrollOn ? '8.5rem' : '10rem'};
-    background: ${props => props.scrollOn && 'rgba(0, 0, 0, 0.432)'};
+    height: ${props => props.scrollOn ? '9rem' : '14rem'};
+    background: ${props => props.scrollOn && 'rgba(0, 0, 0, 0.321)'};
     backdrop-filter: ${props => props.scrollOn && `blur(2rem)`};
     transition: .4s ease;
 

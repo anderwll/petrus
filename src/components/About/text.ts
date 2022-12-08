@@ -1,15 +1,19 @@
-export const texto1: string = `There are many variations of passages of Lorem Ipsum available, 
-but the majority have suffered alteration in some form, by injected humour, or randomised words 
-which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you 
-need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum 
-generators on the Internet tend to repeat predefined chunks as necessary, making this the first true 
-generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model 
-sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore 
-always free from repetition, injected humour, or non-characteristic words etc.`;
+export const texto1: string = `Somos apaixonados por tudo o que é confortável, prático e belo. 
+Acreditamos em uma arquitetura que reverencia o ser humano, e não o contrário.`;
 
-export const texto2: string = `The generated Lorem Ipsum is therefore 
-always free from repetition, injected humour, or non-characteristic words etc.`;
+export const texto2: string = `Julgamos que a construção é moldada conforme as nossas necessidades, 
+dessa maneira a forma deve refletir quem somos!`;
 
-export const texto3: string = `It uses a dictionary of over 200 Latin words!`;
+export const texto3: string = `Se você busca qualidade de vida, originalidade e o bem estar consigo mesmo, 
+está no lugar certo!`;
+
+export const texto4: string = `Temos o compromisso de te oferecer uma experiência única e agradável através de 
+nosso trabalho.`;
+
+export const texto5: string = `Buscamos sempre ser referência em compromisso, atendimento e serviço para 
+nossos clientes e parceiros. Somos a Petrus Arquitetura e temos a forte missão de transformar o seu sonho 
+em algo palpável!`;
+
+
 
 

@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 const DivText = styled.div`
     width: 60%;
-    padding: 2rem 5rem;
-    background-color: ${props => props.theme.bgColor};
+    padding: 6rem;
+    background-color: rgba(255, 255, 255, 0.432);
     box-shadow: ${props => props.theme.boxShadow};
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(1rem);
     text-align: justify;
 
     h2 {
-        margin-top: 1rem !important;
+        margin-top: 0 !important;
+        margin-bottom: 4rem !important;
     }
        
     p {
@@ -18,12 +19,12 @@ const DivText = styled.div`
         color: ${props => props.theme.primary};
     }
 
-    @media screen and (max-width:900px) {
+    @media screen and (max-width:1200px) {
         width: 80%;
-        padding: 2rem 3rem;
+        padding: 4rem;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 900px) {
         width: 100%;
        
     }
