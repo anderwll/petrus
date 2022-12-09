@@ -15,7 +15,7 @@ const Carrousel = () => {
                 {dados.map((item, index) => {
                     return (
                         <Carousel.Item key={index} interval={800}>
-                            <DivImg bgImage={item.imgSrc}/>
+                            <DivImg bgImage={item.imgSrc} />
                             <Carousel.Caption>
                                 <Typography variant="h2" color="initial">A PARTIR DAQUI, SEU SONHO SE TORNARÁ PALPÁVEL!</Typography>
                                 <Typography variant="h4" color="initial">SEJA BEM VINDO A NOSSA CASA.</Typography>

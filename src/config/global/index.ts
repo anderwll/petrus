@@ -32,10 +32,12 @@ const GlobalStyle = createGlobalStyle`
 
     p {
         font-size: 1.8rem !important;
+        font-weight: lighter !important;
     }
 
     a {
         font-size: 1.8rem !important;
+        font-weight: lighter !important;
     }
 
 `;

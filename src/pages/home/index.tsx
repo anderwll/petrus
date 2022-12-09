@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Projetos from '../../components/Projetos';
 import Servicos from '../../components/Servicos';
+import Mvv from '../../components/Mvv';
 
 const Home = () => {
     return (
@@ -15,8 +16,9 @@ const Home = () => {
           <Header /> 
           <Apresentacao /> 
           <Projetos />
-          <Servicos />
           <About />
+          <Servicos />
+          <Mvv />
           <Equipe />
           <Contatos />
           <ButtonFloating />

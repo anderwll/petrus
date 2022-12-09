@@ -16,13 +16,12 @@ const DivCarrousel = styled.div`
     }
 
     @media only screen and ( max-width: 480px) {
-       
         h2 {
             font-size: 2rem;
         }
 
         h4 {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
         }
     } 
     
@@ -32,6 +31,7 @@ const DivImg = styled.div<DivImgProps>`
     width: 100%;
     height: 95vh;
     filter: brightness(45%);
+    background-color: rgba(0, 0, 0, 0.923);
     background-image: url(${props => props.bgImage});
     background-position: center;
     background-size: cover;

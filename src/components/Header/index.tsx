@@ -30,8 +30,9 @@ const Header = () => {
             <DivLinks menuOpen={menu}>
                 <Close onClick={showMenu}/>
                 <Links href='#projects' onClick={showMenu}>Projetos</Links>
-                <Links href='#services' onClick={showMenu}>Serviços</Links>
                 <Links href='#about' onClick={showMenu}>Quem somos</Links>
+                <Links href='#services' onClick={showMenu}>Serviços</Links>
+                <Links href='#mission' onClick={showMenu}>MVV</Links>
                 <Links href='#team' onClick={showMenu}>Equipe</Links>
                 <Links href='#contacts' onClick={showMenu}>Contato</Links>
             </DivLinks>

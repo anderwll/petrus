@@ -1,53 +1,35 @@
-import React, {useState} from 'react';
-import { Box, Grid, Paper, Typography } from '@mui/material';
-import { texto1 } from './text';
-import { hover } from '@testing-library/user-event/dist/hover';
-import { DivServicos } from './styled';
+import React from 'react';
 
-const Card = () => {
-    const [show, setShow] = useState(false);
-    const [hover, setHover] = useState(false);
+import { DivBack, DivCard, DivContent, DivFront, SectionCard } from './styled';
+import Typography from '@mui/material/Typography'
 
-    const showFC = () => setShow(!show);
-    const hoverFC = () => setHover(!hover);
+interface CardProps {
+    bgImg: string,
+    title: string,
+    text: string
+}
 
-    return (
-        
-            <Grid item sm={6} md={5} lg={3} xl={3}
-                sx={{
-                    backgroundImage: 'url(/assets/apresentacao/img1.png)',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    display: 'flex', 
-                    flexDirection: 'column', 
-                    textAlign: 'center', 
-                    justifyContent: 'center', 
-                    height: '35rem',
-                    cursor: 'pointer',
-                    
-                    
-                }} onClick={showFC} onMouseOver={hoverFC}
-            >
-            <Paper sx={{opacity: `${show ? '1' : '0'}`, 
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    textAlign: 'center',
-                    padding: '1rem',
-                    backgroundColor: 'rgba(0, 0, 0, 0.432)', 
-                    boxShadow: '0 8px 32px 0 rgba(3, 3, 3, 0.37)',
-                    height: '35rem',
-                    gap: 4,
-                }} 
-            >
-                <Typography variant="h4">Projetos residências</Typography>
-                
-                <Typography variant="body1">{texto1}</Typography>
-            </Paper>
+const Card: React.FC<CardProps> = ({ bgImg, title, text }) => {
+     return (
+        <SectionCard>
+            <DivCard>
             
-            </Grid>
-        
-        
+                <DivFront bgImg={bgImg}>
+                    <DivContent>
+                        <Typography variant="h3" color="initial">{title}</Typography>
+                        <Typography variant="body2" color="initial">Clique e Saiba Mais</Typography>
+                    </DivContent>
+                </DivFront>
+
+                <DivBack bgImg={bgImg}>
+                    <DivContent>
+                        <Typography variant="h3" color="initial">{title}</Typography>
+                        <Typography variant="body1" color="initial">{text}</Typography>
+                    </DivContent>
+                </DivBack>
+            
+            </DivCard>
+        </SectionCard>
     );
 };
 

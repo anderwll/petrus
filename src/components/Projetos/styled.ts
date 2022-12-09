@@ -81,9 +81,9 @@ const DivModel = styled.div<DivModelPops>`
 
     svg {
         position: fixed;
-        top: 1.5rem;
-        right: 3rem;
-        font-size: 4rem;
+        top: 0;
+        right: 1.5rem;
+        font-size: 4.5rem;
         padding: 0.5rem;
         background-color: rgba(0,0,0,0.4);
         color: #ffff;

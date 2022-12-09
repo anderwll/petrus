@@ -27,7 +27,7 @@ const DivLinks = styled.div<HeaderProps>`
         display: none;
         position: fixed;
         font-size: 3rem;
-        top: 2.5rem;
+        top: 3rem;
         right: 2.5rem;
     }
     
@@ -46,7 +46,7 @@ const DivLinks = styled.div<HeaderProps>`
 
         a {
             color: ${props => props.menuOpen && props.theme.secondary};
-            font-size: 2.5rem;
+            font-size: 2.5rem !important;
         }
 
         svg {
