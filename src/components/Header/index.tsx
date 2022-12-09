@@ -32,9 +32,10 @@ const Header = () => {
                 <Links href='#projects' onClick={showMenu}>Projetos</Links>
                 <Links href='#about' onClick={showMenu}>Quem somos</Links>
                 <Links href='#services' onClick={showMenu}>Serviços</Links>
-                <Links href='#mission' onClick={showMenu}>MVV</Links>
+                <Links href='#mission' onClick={showMenu}>Mvv</Links>
                 <Links href='#team' onClick={showMenu}>Equipe</Links>
                 <Links href='#contacts' onClick={showMenu}>Contato</Links>
+                <Links href='https://refresher.com.br/45875/teste-estilo' target='_blank' onClick={showMenu}>Descubra o seu Estilo</Links>
             </DivLinks>
             <DivSociais>
                 <Links href='https://api.whatsapp.com/send?phone=5567999124692&text=Seja%20bem%20vindo!%20' target='_blank'><WhatsApp/></Links>

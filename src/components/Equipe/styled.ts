@@ -44,7 +44,7 @@ const DivSociais = styled.div`
 
 
     a:hover {
-        color: #090979;
+        color: ${props => props.theme.hover};
     }
 
 `;

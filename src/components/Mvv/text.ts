@@ -1,18 +1,13 @@
-export const texto1: string = `Somos apaixonados por tudo o que é confortável, prático e belo. 
-Acreditamos em uma arquitetura que reverencia o ser humano, e não o contrário.`;
+export const texto1: string = `Estabelecer e conceder espaços que promovam qualidade de vida, aliando 
+funcionalidade, sustentabilidade, conforto e acessibilidade através da neurociência e seus aspectos 
+comportamentais, com o único foco e objetivo de facilitar e encantar pessoas.`;
 
-export const texto2: string = `Julgamos que a construção é moldada conforme as nossas necessidades, 
-dessa maneira a forma deve refletir quem somos!`;
+export const texto2: string = `Ser referência em cultura e valores,contribuir para a Arquitetura Brasileira 
+e a nossa sociedade, com o objetivo de sermos inspirações por onde passarmos.`;
 
-export const texto3: string = `Se você busca qualidade de vida, originalidade e o bem estar consigo mesmo, 
-está no lugar certo!`;
-
-export const texto4: string = `Temos o compromisso de te oferecer uma experiência única e agradável através de 
-nosso trabalho.`;
-
-export const texto5: string = `Buscamos sempre ser referência em compromisso, atendimento e serviço para 
-nossos clientes e parceiros. Somos a Petrus Arquitetura e temos a forte missão de transformar o seu sonho 
-em algo palpável!`;
+export const texto3: string = `Tudo que fizermos que façamos por amor. Devemos oferecer um atendimento de 
+qualidade e um serviço de excelência, priorizando ser transparente, honesto e justo para com os outros, 
+melhorando a cada dia  e promovendo relações de amizade dentro da equipe e com quem nos cercam.`;
 
 
 

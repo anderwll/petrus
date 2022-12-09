@@ -60,7 +60,7 @@ const DivFront = styled.div<DivCardProps>`
     background-position: center;
     background-size: cover;
     backface-visibility: hidden;
-    border-radius: 1rem;
+    box-shadow: ${props => props.theme.boxShadow};
     overflow: hidden;
     position: absolute;
 `;
@@ -75,7 +75,7 @@ const DivBack = styled.div<DivCardProps>`
     background-position: center;
     background-size: cover;
     backface-visibility: hidden;
-    border-radius: 1rem;
+    box-shadow: ${props => props.theme.boxShadow};
     overflow: hidden;
     transform: rotateY(180deg);
     position: absolute;
@@ -88,7 +88,6 @@ const DivContent = styled.div`
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
-    filter: brightness(100%);
     background-color: rgba(0, 0, 0, 0.432);
 
     h3, p {

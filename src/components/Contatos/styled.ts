@@ -30,7 +30,7 @@ const Links = styled.a`
     color: #333;
 
     &:hover {
-        color: #fff;
+        color: ${props => props.theme.hover}
     }
 `;
 

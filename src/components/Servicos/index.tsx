@@ -15,11 +15,11 @@ const Servicos = () => {
         >
             <Typography variant="h2">Serviços</Typography>
                 <DivServicos>
-                    <Card bgImg='./assets/apresentacao/img1.png' title='Projeto Residencial' text={texto1}/>
-                    <Card bgImg='./assets/gallery/img28.png' title='Projeto Comercial' text={texto2}/>
+                    <Card bgImg='./assets/gallery/img2.png' title='Projeto Residencial' text={texto1}/>
+                    <Card bgImg='./assets/gallery/img18.png' title='Projeto Comercial' text={texto2}/>
                     <Card bgImg='./assets/gallery/img22.png' title='Consultoria' text={texto3}/>
                 </DivServicos>
-            <ButtonDefault variant='outlined' color='inherit' texto='Faça o seu orçamento' hRef='https://refresher.com.br/45875/briefing' target='_blank' icon={<AttachMoneyIcon/>}/>
+            <ButtonDefault texto='Faça o seu orçamento' hRef='https://refresher.com.br/45875/briefing' target='_blank' icon={<AttachMoneyIcon/>}/>
         </SectionDef>
     );
 };

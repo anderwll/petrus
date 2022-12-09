@@ -73,7 +73,7 @@ const Links = styled.a`
     } 
 
     &:hover {
-        color: ${props => props.theme.primary};
+        color: ${props => props.theme.hover};
     }
 `;
 

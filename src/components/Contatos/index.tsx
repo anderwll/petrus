@@ -4,11 +4,11 @@ import { DivContatos, DivSociais, Links } from './styled';
 import Typography from '@mui/material/Typography'
 import { Facebook, Instagram, WhatsApp } from '@mui/icons-material';
 import { Grid } from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const Contatos = () => {
     return (
-        <SectionDef bgImg='./assets/apresentacao/img1.png' id='contacts'>
+        <SectionDef bgImg='./assets/apresentacao/img3.png' id='contacts'>
            <DivContatos>
                 <Grid container>
                   <Grid item 
@@ -28,7 +28,7 @@ const Contatos = () => {
                     </DivSociais>
                     <Typography variant="h4">A partir daqui, seu sonho se tornará palpável!</Typography>
                     <Typography variant="body1">contatopetrusarquitetura@gmail.com</Typography>
-                    <Links href='#'><HomeIcon/></Links>
+                    <Links href='#'><ArrowUpwardIcon/></Links>
                   </Grid>
                 </Grid>
            </DivContatos> 

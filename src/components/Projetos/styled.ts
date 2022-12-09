@@ -6,7 +6,7 @@ interface DivModelPops {
 
 const DivGallery = styled.div`
     margin: 4rem 0 4rem 0;
-    width: 70%;
+    width: 60%;
     overflow: hidden;
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -17,7 +17,7 @@ const DivGallery = styled.div`
     
 
     @media screen and (max-width: 1536px) {
-        width: 90%;
+        width: 80%;
     }
 
     @media screen and (max-width: 1200px) {
@@ -27,6 +27,7 @@ const DivGallery = styled.div`
     }
 
     @media screen and (max-width: 600px) {
+        width: 90%;
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
@@ -81,10 +82,9 @@ const DivModel = styled.div<DivModelPops>`
 
     svg {
         position: fixed;
-        top: 0;
-        right: 1.5rem;
-        font-size: 4.5rem;
-        padding: 0.5rem;
+        top: 1rem;
+        right: 1rem;
+        font-size: 4rem;
         background-color: rgba(0,0,0,0.4);
         color: #ffff;
         cursor: pointer;

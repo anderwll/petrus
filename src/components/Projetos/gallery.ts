@@ -51,7 +51,7 @@ export const dados: DataI[] = [
     },
     {
         id: 12,
-        imgSrc: './assets/gallery/img13.jpg'
+        imgSrc: './assets/gallery/img13.png'
     },
     {
         id: 13,
@@ -59,27 +59,19 @@ export const dados: DataI[] = [
     },
     {
         id: 14,
-        imgSrc: './assets/gallery/img15.png'
+        imgSrc: './assets/gallery/img15.jpg'
     },
     {
         id: 15,
         imgSrc: './assets/gallery/img16.png'
     },
     {
-        id: 16,
-        imgSrc: './assets/gallery/img17.png'
-    },
-    {
         id: 17,
-        imgSrc: './assets/gallery/img18.jpg'
+        imgSrc: './assets/gallery/img18.png'
     },
     {
         id: 18,
         imgSrc: './assets/gallery/img19.png'
-    },
-    {
-        id: 19,
-        imgSrc: './assets/gallery/img20.png'
     },
     {
         id: 20,
@@ -88,10 +80,6 @@ export const dados: DataI[] = [
     {
         id: 21,
         imgSrc: './assets/gallery/img22.png'
-    },
-    {
-        id: 22,
-        imgSrc: './assets/gallery/img23.png'
     },
     {
         id: 23,

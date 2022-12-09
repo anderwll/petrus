@@ -12,6 +12,10 @@ const DivText = styled.div`
         margin-top: 0 !important;
         margin-bottom: 4rem !important;
     }
+
+    h4 {
+        margin: 2rem 0 !important;
+    }
        
     p {
         margin-top: 2.5rem;
