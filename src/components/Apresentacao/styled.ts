@@ -4,38 +4,84 @@ interface DivImgProps {
     bgImage: string
 }
 
-const DivCarrousel = styled.div`
+const DivBg = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.632);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     h2 { 
         color: ${props => props.theme.secondary};
-        margin-bottom: 2rem;
+        font-size: 5rem;
     }
 
     h4 { 
         color: ${props => props.theme.secondary};
-        margin-bottom: 5rem;
+        font-size: 2.5rem;
     }
+`;
 
-    @media only screen and ( max-width: 480px) {
-        h2 {
-            font-size: 2rem;
-        }
+const DivContent = styled.div`
+    display: flex;
+    align-items: center;
+    top: 0;
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    border-right: 0.5rem outset #fed406;
+`;
 
-        h4 {
-            font-size: 1.2rem;
-        }
-    } 
-    
+const DivTitle = styled.div`
+    width: 80%;
+    margin-top: 5%;
+`;
+
+const DivFooter = styled.div`
+    position: absolute;
+    width: 85%;
+    bottom: 7%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+`;
+
+const DivPa = styled.div`
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+
 `;
 
 const DivImg = styled.div<DivImgProps>`
     width: 100%;
     height: 95vh;
-    filter: brightness(45%);
+    //filter: brightness(45%);
     background-color: rgba(0, 0, 0, 0.923);
     background-image: url(${props => props.bgImage});
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
+    animation: showImg 10s ease;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+    @keyframes showImg {
+      0% {
+        background-size: 150% 150%;
+      }
+      100% {
+        background-size: 100% 100%;
+      }
+    }
 `
 
-export { DivCarrousel, DivImg };
+export { DivContent, DivImg, DivTitle, DivBg, DivFooter, DivPa};

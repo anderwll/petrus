@@ -22,7 +22,9 @@ const DivButtonDefault = styled.div<DivButtonDefaultProps>`
     }
 
     a:hover {
-        box-shadow: 0 2px 32px 0 rgba(3, 3, 3, 0.37);
+        box-shadow: 0 0.2rem 5rem 0 rgba(3, 3, 3, 0.37);
+        background: ${props => props.theme.yellow};
+        color: ${props => props.theme.primary};
     }
 
     svg {

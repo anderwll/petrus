@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 const DivText = styled.div`
-    width: 60%;
+    width: 70%;
     padding: 8rem;
-    background-color: rgba(255, 255, 255, 0.432);
+    background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(254,212,6,0.4990371148459384) 100%);
     box-shadow: ${props => props.theme.boxShadow};
-    backdrop-filter: blur(1rem);
     text-align: justify;
 
     h2 {
@@ -18,13 +17,13 @@ const DivText = styled.div`
         color: ${props => props.theme.primary};
     }
 
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:1536px) {
         width: 80%;
         padding: 6rem;
     }
 
     @media screen and (max-width: 900px) {
-        width: 100%;
+        width: 90%;
         padding: 4rem;
        
     }

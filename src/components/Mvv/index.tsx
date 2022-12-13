@@ -9,7 +9,7 @@ import { SectionDef } from '../styledDefault';
 
 const Mvv = () => {
     return (
-        <SectionDef id='mission' bgImg='./assets/apresentacao/img1.png'>
+        <SectionDef bgColor='#26246b' h2Width id='mission'>
             <DivText 
                 data-aos="fade-left"
                 data-aos-duration='1000'

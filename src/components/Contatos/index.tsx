@@ -1,15 +1,15 @@
 import React from 'react';
-import { SectionDef } from '../styledDefault';
-import { DivContatos, DivSociais, Links } from './styled';
+
+import { DivButton, DivContatos, DivSociais, Links, SectionContatos } from './styled';
 import Typography from '@mui/material/Typography'
 import { Facebook, Instagram, WhatsApp } from '@mui/icons-material';
-import { Grid } from '@mui/material';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import { Fab, Grid } from '@mui/material';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
 const Contatos = () => {
     return (
-        <SectionDef bgImg='./assets/apresentacao/img3.png' id='contacts'>
-           <DivContatos>
+        <SectionContatos id='contacts'>
+           <DivContatos data-aos="fade-down" data-aos-duration="1500">
                 <Grid container>
                   <Grid item 
                     xs={12}
@@ -28,11 +28,15 @@ const Contatos = () => {
                     </DivSociais>
                     <Typography variant="h4">A partir daqui, seu sonho se tornará palpável!</Typography>
                     <Typography variant="body1">contatopetrusarquitetura@gmail.com</Typography>
-                    <Links href='#'><ArrowUpwardIcon/></Links>
                   </Grid>
                 </Grid>
            </DivContatos> 
-        </SectionDef>
+           <DivButton>
+            <Fab aria-label="add" href='#' >
+                  <ArrowCircleUpIcon />
+              </Fab> 
+           </DivButton>
+        </SectionContatos>
     );
 };
 

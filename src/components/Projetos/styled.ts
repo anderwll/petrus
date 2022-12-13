@@ -5,48 +5,26 @@ interface DivModelPops {
 }
 
 const DivGallery = styled.div`
-    margin: 4rem 0 4rem 0;
-    width: 60%;
-    overflow: hidden;
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-width: 33%;
-    -moz-column-width: 33%;
-    column-width: 33%;
-    
+    margin: 6rem 0;
+    width: 90%;
+    height: 100%;
 
-    @media screen and (max-width: 1536px) {
-        width: 80%;
+    h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: rgba(38, 37, 107, 0.432);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+        color: ${props => props.theme.secondary};
     }
 
-    @media screen and (max-width: 1200px) {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
-
-    @media screen and (max-width: 600px) {
-        width: 90%;
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-        -webkit-column-width: 100%;
-        -moz-column-width: 100%;
-        column-width: 100%;
-    }
-`;
-
-const DivPics = styled.div`
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease;
-    transition: 0.8s ease;
-    transform: scale(1.03);
-    cursor: pointer;
-
-    &&:hover {
-        filter: brightness(40%);
-        transform: scale(1.05);
+    h4:hover {
+        opacity: 1;
     }
 `;
 
@@ -92,4 +70,4 @@ const DivModel = styled.div<DivModelPops>`
 
 `;
 
-export { DivGallery, DivPics, DivModel };
+export { DivGallery, DivModel };

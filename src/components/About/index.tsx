@@ -8,12 +8,12 @@ import { SectionDef } from '../styledDefault';
 
 const About = () => {
     return (
-        <SectionDef id='about' bgImg='assets/apresentacao/img7.png'>
+        <SectionDef bgColor='#26246b' h2Width id='about'>
             <DivText 
                 data-aos="fade-right"
-                data-aos-duration='1000'
+                data-aos-duration='1500'
             >
-                <Typography variant="h2" color="initial">Quem somos</Typography>
+                <Typography variant="h2" color="initial">Quem Somos</Typography>
                 <Typography variant="body2" color="initial">{texto1}</Typography>
                 <Typography variant="body2" color="initial">{texto2}</Typography>
                 <Typography variant="body2" color="initial">{texto3}</Typography>

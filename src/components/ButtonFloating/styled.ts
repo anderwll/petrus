@@ -8,6 +8,17 @@ const DivButtonFloating = styled.div`
     margin-right: 2rem;
     margin-bottom: 2rem;
     z-index: 999;
+
+    a {
+        background-color: #26256b;
+        color: #fff;
+    }
+
+    a:hover {
+        background-color: #fed406;
+        color: #000;
+    }
+
     svg {
         font-size: 3rem;
     }

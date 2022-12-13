@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 interface SectionDefProps {
-    bgImg?: string,
-    bgColor?: string
+    bgColor?: string,
+    h2Width?: boolean,
 }
 
 const SectionDef = styled.section<SectionDefProps>`
@@ -11,13 +11,24 @@ const SectionDef = styled.section<SectionDefProps>`
     align-items: center;
     width: 100vw;
     height: 100%;
-    padding: 1.6rem;
-    margin-top: 6rem;
-    background-image: url(${props => props.bgImg});
-    background-color: ${props => props.bgColor};
-    background-size: cover;
-    background-position: center;
+    padding: 4rem 0;
+    background: ${props => props.bgColor};
     overflow-x: hidden;
+
+    h2 {
+        display: flex;
+        justify-content: ${props => props.h2Width ? 'start' : 'center'};
+        width: ${props => props.h2Width ? '100%' : '30rem'};
+        border-bottom: 0.2rem solid ${props => props.h2Width ? '#26256b' : '#fed406'};
+    }
+
+   /*  h3 {
+        display: flex;
+        justify-content: center;
+        width: 40rem;
+        border-bottom: 0.2rem solid #26256b;;
+    } */
+
 
 `;
 

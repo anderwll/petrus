@@ -4,101 +4,78 @@ interface DataI {
     imgSrc: string
 }
 
-export const dados: DataI[] = [
+export const dadosMenos: DataI[] = [
     {
         id: 1,
-        imgSrc: './assets/gallery/img2.png'
+        imgSrc: './assets/gallery/banheiro.webp'
     },
     {
         id: 2,
-        imgSrc: './assets/gallery/img3.png'
+        imgSrc: './assets/gallery/sala.webp'
     },
     {
         id: 3,
-        imgSrc: './assets/gallery/img4.png'
+        imgSrc: './assets/gallery/gourmet.webp'
     },
     {
         id: 4,
-        imgSrc: './assets/gallery/img5.png'
+        imgSrc: './assets/gallery/quarto-menino.webp'
     },
     {
         id: 5,
-        imgSrc: './assets/gallery/img6.png'
+        imgSrc: './assets/gallery/quarto-menina.webp'
+    },
+   
+]
+
+export const dadosMais: DataI[] = [
+    {
+        id: 1,
+        imgSrc: './assets/gallery/banheiro.webp'
+    },
+    {
+        id: 2,
+        imgSrc: './assets/gallery/sala.webp'
+    },
+    {
+        id: 3,
+        imgSrc: './assets/gallery/closet.webp'
+    },
+    {
+        id: 4,
+        imgSrc: './assets/gallery/home-office.webp'
+    },  
+    {
+        id: 5,
+        imgSrc: './assets/gallery/gourmet.webp'
     },
     {
         id: 6,
-        imgSrc: './assets/gallery/img7.png'
+        imgSrc: './assets/gallery/cozinha-industrial.webp'
     },
     {
         id: 7,
-        imgSrc: './assets/gallery/img8.png'
+        imgSrc: './assets/gallery/cozinha.webp'
     }, 
     {
         id: 8,
-        imgSrc: './assets/gallery/img9.png'
-    },
+        imgSrc: './assets/gallery/lavanderia.webp'
+    },   
     {
         id: 9,
-        imgSrc: './assets/gallery/img10.png'
+        imgSrc: './assets/gallery/quarto-menino.webp'
     },
     {
         id: 10,
-        imgSrc: './assets/gallery/img11.png'
+        imgSrc: './assets/gallery/quarto-menina.webp'
     },
     {
         id: 11,
-        imgSrc: './assets/gallery/img12.png'
+        imgSrc: './assets/gallery/quarto-bebe.webp'
     },
     {
         id: 12,
-        imgSrc: './assets/gallery/img13.png'
+        imgSrc: './assets/gallery/salao.webp'
     },
-    {
-        id: 13,
-        imgSrc: './assets/gallery/img14.png'
-    },
-    {
-        id: 14,
-        imgSrc: './assets/gallery/img15.jpg'
-    },
-    {
-        id: 15,
-        imgSrc: './assets/gallery/img16.png'
-    },
-    {
-        id: 17,
-        imgSrc: './assets/gallery/img18.png'
-    },
-    {
-        id: 18,
-        imgSrc: './assets/gallery/img19.png'
-    },
-    {
-        id: 20,
-        imgSrc: './assets/gallery/img21.png'
-    }, 
-    {
-        id: 21,
-        imgSrc: './assets/gallery/img22.png'
-    },
-    {
-        id: 23,
-        imgSrc: './assets/gallery/img24.png'
-    },
-    {
-        id: 24,
-        imgSrc: './assets/gallery/img25.png'
-    },
-    {
-        id: 25,
-        imgSrc: './assets/gallery/img26.png'
-    },
-    {
-        id: 26,
-        imgSrc: './assets/gallery/img27.png'
-    },
-    {
-        id: 27,
-        imgSrc: './assets/gallery/img28.png'
-    }
+    
 ]

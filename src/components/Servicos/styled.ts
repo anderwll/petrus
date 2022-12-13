@@ -43,7 +43,7 @@ const DivCard = styled.div`
     justify-content: center;
     position: absolute;
     transform-style: preserve-3d;
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
 
     &&:hover{
         transform: rotateY(180deg);
@@ -88,7 +88,7 @@ const DivContent = styled.div`
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(38, 37, 107, 0.421);
 
     h3, p {
         color: ${props => props.theme.secondary};

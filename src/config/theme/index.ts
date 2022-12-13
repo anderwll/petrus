@@ -1,6 +1,5 @@
 const tema = {
-    // header - about - porjeto/model
-    bgColor: 'rgba(0, 0, 0, 0.432)',
+    bgColor: 'rgba(38, 37, 107, 0.432)',
     boxShadow: '0 8px 32px 0 rgba(3, 3, 3, 0.37)',
   
     // color + escura
@@ -10,9 +9,10 @@ const tema = {
     secondary: '#fff',
 
     // amarelo
-    hover: '#26256b'
+    yellow: '#fed406',
 
-    
+    // azul
+    blue: '#26256b' 
 }
 
 export default tema;

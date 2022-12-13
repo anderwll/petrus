@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const DivEquipe = styled.div`
-    width: 70vw; 
+    width: 70%; 
     padding: 10rem 0 10rem 0;
     
     h5 {
@@ -9,7 +9,6 @@ const DivEquipe = styled.div`
     }
 
     p {
-        font-size: ${props => props.theme.fontSize};
         text-align: justify;
     }
 
@@ -24,7 +23,31 @@ const DivEquipe = styled.div`
     @media screen and (max-width: 900px) {
         width: 100vw;
         text-align: center !important;
-    }   
+    }  
+`;
+
+const Links = styled.a`
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    width: auto;
+    height: 38rem;
+    padding: 16.5rem;
+    background-color: rgba(38, 37, 107, 0.432);
+    color: ${props => props.theme.secondary} !important;
+
+    @media screen and ( max-width: 900px ) {
+        height: 32rem;
+        padding: 13.5rem;
+    }
+
+    svg {
+        font-size: 5rem;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
 `;
 
 const ImgPerfil = styled.img`
@@ -36,17 +59,20 @@ const ImgPerfil = styled.img`
 `;
 
 const DivSociais = styled.div`
+    display: flex;
+    justify-content: center;
     margin-top: 2rem;
+    svg {
+        font-size: 3rem;
+    }
 
     a {
-        color: ${props => props.theme.primary}
+        color: ${props => props.theme.blue};  
     }
-
 
     a:hover {
-        color: ${props => props.theme.hover};
+        color: ${props => props.theme.yellow};
     }
-
 `;
 
-export { DivEquipe, ImgPerfil, DivSociais };
+export { DivEquipe, ImgPerfil, DivSociais, Links };

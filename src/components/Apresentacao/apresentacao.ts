@@ -7,30 +7,22 @@ interface DataI {
 export const dados: DataI[] = [
     {
         id: 1,
-        imgSrc: './assets/apresentacao/img1.png'
+        imgSrc: './assets/apresentacao/cozinha.webp'
     },
     {
         id: 2,
-        imgSrc: './assets/apresentacao/img2.jpg'
+        imgSrc: './assets/apresentacao/lavanderia.webp'
     },
     {
         id: 3,
-        imgSrc: './assets/apresentacao/img3.png'
+        imgSrc: './assets/apresentacao/quarto-casal.webp'
     },
     {
         id: 4,
-        imgSrc: './assets/apresentacao/img4.png'
+        imgSrc: './assets/apresentacao/quarto-menina.webp'
     },
     {
         id: 5,
-        imgSrc: './assets/apresentacao/img5.png'
-    },
-    {
-        id: 6,
-        imgSrc: './assets/apresentacao/img6.png'
-    },
-    {
-        id: 7,
-        imgSrc: './assets/apresentacao/img7.png'
+        imgSrc: './assets/apresentacao/quarto-menino.webp'
     } 
 ]

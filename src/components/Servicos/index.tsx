@@ -9,15 +9,12 @@ import { texto1, texto2, texto3 } from './text';
 
 const Servicos = () => {
     return (
-        <SectionDef id='services'
-            data-aos="fade-up"
-            data-aos-duration='800'
-        >
-            <Typography variant="h2">Serviços</Typography>
-                <DivServicos>
-                    <Card bgImg='./assets/gallery/img2.png' title='Projeto Residencial' text={texto1}/>
-                    <Card bgImg='./assets/gallery/img18.png' title='Projeto Comercial' text={texto2}/>
-                    <Card bgImg='./assets/gallery/img22.png' title='Consultoria' text={texto3}/>
+        <SectionDef id='services'>
+            <Typography variant="h2" data-aos="fade-down" data-aos-duration="1000">Serviços</Typography>
+                <DivServicos data-aos="zoom-out" data-aos-duration="1500">
+                    <Card bgImg='./assets/gallery/cozinha.webp' title='Projeto Residencial' text={texto1}/>
+                    <Card bgImg='./assets/gallery/salao.webp' title='Projeto Comercial' text={texto2}/>
+                    <Card bgImg='./assets/gallery/home-office.webp' title='Consultoria' text={texto3}/>
                 </DivServicos>
             <ButtonDefault texto='Faça o seu orçamento' hRef='https://refresher.com.br/45875/briefing' target='_blank' icon={<AttachMoneyIcon/>}/>
         </SectionDef>
