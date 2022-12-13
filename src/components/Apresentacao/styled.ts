@@ -24,6 +24,16 @@ const DivBg = styled.div`
         color: ${props => props.theme.secondary};
         font-size: 2.5rem;
     }
+
+    @media screen and ( max-width: 600px ) {
+        h2 { 
+            font-size: 3.5rem;
+        }
+
+        h4 { 
+            font-size: 1.8rem;
+        }
+    }
 `;
 
 const DivContent = styled.div`
@@ -37,7 +47,7 @@ const DivContent = styled.div`
 `;
 
 const DivTitle = styled.div`
-    width: 80%;
+    width: 98%;
     margin-top: 5%;
 `;
 
@@ -55,7 +65,7 @@ const DivFooter = styled.div`
 const DivPa = styled.div`
     position: absolute;
     bottom: 5%;
-    right: 6%;
+    right: 5%;
 
 `;
 
