@@ -89,6 +89,7 @@ const DivContent = styled.div`
     padding: 2rem;
     gap: 2rem;
     background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 
     h3, p {
         color: ${props => props.theme.secondary};

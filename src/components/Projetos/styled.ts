@@ -8,6 +8,7 @@ const DivGallery = styled.div`
     margin: 6rem 0;
     width: 90%;
     height: 100%;
+    cursor: pointer;
 
     h4 {
         display: flex;
