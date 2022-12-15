@@ -6,7 +6,6 @@ const SectionContatos = styled.div`
     justify-content: center;
     width: 100vw;
     height: 40vh;
-    //background: #fed406;
     background: #26256b;
 `;
 
@@ -19,7 +18,6 @@ const DivContatos = styled.div`
     width: 90vw;
     height: 40vh;
     bottom: 8vh;
-    //background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(38,37,107,1) 85%);
     background: linear-gradient(180deg, rgba(255,255,255,0.9710259103641457) 0%, rgba(254,212,6,0.8393732492997199) 75%);
     p {
         font-size: ${props => props.theme.fontSize};
@@ -73,7 +71,7 @@ const Links = styled.a`
     color: ${props => props.theme.primary};
 
     &:hover {
-        color: ${props => props.theme.yellow}
+        color: ${props => props.theme.blue}
     }
 `;
 

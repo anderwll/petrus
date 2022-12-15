@@ -88,7 +88,7 @@ const DivContent = styled.div`
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
-    background-color: rgba(38, 37, 107, 0.421);
+    background-color: rgba(0, 0, 0, 0.7);
 
     h3, p {
         color: ${props => props.theme.secondary};

@@ -8,7 +8,7 @@ const DivBg = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0, 0.632);
+    background-color: rgba(0,0,0, 0.7);
 
     display: flex;
     justify-content: center;
@@ -17,21 +17,21 @@ const DivBg = styled.div`
 
     h2 { 
         color: ${props => props.theme.secondary};
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
     h4 { 
         color: ${props => props.theme.secondary};
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     @media screen and ( max-width: 600px ) {
         h2 { 
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
 
         h4 { 
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
     }
 `;
@@ -39,22 +39,21 @@ const DivBg = styled.div`
 const DivContent = styled.div`
     display: flex;
     align-items: center;
-    top: 0;
     position: absolute;
-    width: 85%;
-    height: 85%;
-    border-right: 0.5rem outset #fed406;
+    width: 80vw;
+    height: 65vh;
+    border-right: 0.5rem solid ${props => props.theme.secondary};
 `;
 
 const DivTitle = styled.div`
-    width: 98%;
-    margin-top: 5%;
+    width: 100%;
+    margin-bottom: 5%;
 `;
 
 const DivFooter = styled.div`
     position: absolute;
-    width: 85%;
-    bottom: 7%;
+    width: 80vw;
+    bottom: 5vh;
 
     display: flex;
     flex-direction: row;
@@ -64,16 +63,15 @@ const DivFooter = styled.div`
 
 const DivPa = styled.div`
     position: absolute;
-    bottom: 5%;
-    right: 5%;
+    bottom: 5vh;
+    right: 7.5vw;
 
 `;
 
 const DivImg = styled.div<DivImgProps>`
     width: 100%;
     height: 95vh;
-    //filter: brightness(45%);
-    background-color: rgba(0, 0, 0, 0.923);
+    background-color: rgba(0, 0, 0, 0.8);
     background-image: url(${props => props.bgImage});
     background-position: center;
     background-size: 100% 100%;
@@ -84,6 +82,13 @@ const DivImg = styled.div<DivImgProps>`
     justify-content: center;
     flex-direction: column;
 
+    @media screen and (max-width: 600px) {
+        height: 90vh;
+        background-size: cover;
+        animation: 0;
+    }
+
+    // ANIMATION DESKTOP
     @keyframes showImg {
       0% {
         background-size: 150% 150%;

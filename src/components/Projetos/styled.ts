@@ -14,7 +14,8 @@ const DivGallery = styled.div`
         align-items: center;
         justify-content: center;
         position: absolute;
-        background-color: rgba(38, 37, 107, 0.432);
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: all 0.8s;
         top: 0;
         width: 100%;
         height: 100%;
@@ -63,7 +64,7 @@ const DivModel = styled.div<DivModelPops>`
         top: 1rem;
         right: 1rem;
         font-size: 4rem;
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0, 0, 0, 0.4);
         color: #ffff;
         cursor: pointer;
     }

@@ -15,7 +15,7 @@ export const dadosMenos: DataI[] = [
     },
     {
         id: 3,
-        imgSrc: './assets/gallery/gourmet.webp'
+        imgSrc: './assets/gallery/1.webp'
     },
     {
         id: 4,
@@ -47,11 +47,11 @@ export const dadosMais: DataI[] = [
     },  
     {
         id: 5,
-        imgSrc: './assets/gallery/gourmet.webp'
+        imgSrc: './assets/gallery/1.webp'
     },
     {
         id: 6,
-        imgSrc: './assets/gallery/cozinha-industrial.webp'
+        imgSrc: './assets/gallery/gourmet.webp'
     },
     {
         id: 7,
@@ -59,7 +59,7 @@ export const dadosMais: DataI[] = [
     }, 
     {
         id: 8,
-        imgSrc: './assets/gallery/lavanderia.webp'
+        imgSrc: './assets/gallery/2.webp'
     },   
     {
         id: 9,

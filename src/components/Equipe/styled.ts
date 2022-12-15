@@ -33,7 +33,8 @@ const Links = styled.a`
     width: auto;
     height: 38rem;
     padding: 16.5rem;
-    background-color: rgba(38, 37, 107, 0.432);
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.8s;
     color: ${props => props.theme.secondary} !important;
 
     @media screen and ( max-width: 900px ) {

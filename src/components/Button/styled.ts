@@ -14,31 +14,21 @@ const DivButtonDefault = styled.div<DivButtonDefaultProps>`
 
     a {
         font-size: 1.6rem !important;
+        font-weight: 600 !important;
         padding: 1.5rem 3rem;
-        background: linear-gradient(to right, #26256b, #26256b, #fed403, #fed403 );
-        background-size: 300% 300%;
-        color: ${props => props.theme.secondary};
-        animation: backgroundOverlay 5s ease infinite;
+        background-color: ${props => props.theme.yellow};
+        color: ${props => props.theme.primary};
     }
 
     a:hover {
         box-shadow: 0 0.2rem 5rem 0 rgba(3, 3, 3, 0.37);
-        background: ${props => props.theme.yellow};
-        color: ${props => props.theme.primary};
+        background: ${props => props.theme.blue};
+        color: ${props => props.theme.secondary};
     }
 
     svg {
         width: 2rem;
     }
-
-    @keyframes backgroundOverlay {
-        0% { background-position: 0% 50%;}
-        25% { background-position: 50% 100%;}
-        50% { background-position: 100% 50%;}
-        75% { background-position: 50% 0%;}
-        100% { background-position: 0% 50%;}
-    }
-
 `;
 
 export { DivButtonDefault };
