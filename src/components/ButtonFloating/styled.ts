@@ -10,12 +10,12 @@ const DivButtonFloating = styled.div`
     z-index: 999;
 
     a {
-        background-color: #26256b;
+        background-color: #fed406;
         color: #fff;
     }
 
     a:hover {
-        background-color: #fed406;
+        background-color: #26256b;
         color: #000;
     }
 
